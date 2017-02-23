@@ -3,7 +3,10 @@
 	<head>
 		<meta charset="utf-8">
 		<title>GéotLandes - Géomètre expert</title>
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
@@ -12,13 +15,27 @@
 		<p style="font-size: 10px">Cabinet Géomètre expert à Pissos</p>
 		<ul class="nav nav-pills nav-stacked">
 		<li role="presentation" class="active"><a href="#">Link</a></li>
-		<li role="presentation"><a href="#">Link</a></li>
-		<li role="presentation"><a href="#">Link</a></li>
-		<li role="presentation"><a href="#">Link</a></li>
-		<li role="presentation"><a href="#">Link</a></li>
+		<a href="#demo3" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">Item 3</a>
+	    <div class="collapse" id="demo3">
+	      <a href="#SubMenu1" class="list-group-item" data-toggle="collapse" data-parent="#SubMenu1">Subitem 1 <i class="fa fa-caret-down"></i></a>
+	      <div class="collapse list-group-submenu" id="SubMenu1">
+	        <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 1 a</a>
+	        <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 2 b</a>
+	        <a href="#SubSubMenu1" class="list-group-item" data-toggle="collapse" data-parent="#SubSubMenu1">Subitem 3 c <i class="fa fa-caret-down"></i></a>
+	        <div class="collapse list-group-submenu list-group-submenu-1" id="SubSubMenu1">
+	          <a href="#" class="list-group-item" data-parent="#SubSubMenu1">Sub sub item 1</a>
+	          <a href="#" class="list-group-item" data-parent="#SubSubMenu1">Sub sub item 2</a>
+	        </div>
+	        <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 4 d</a>
+	      </div>
+	      <a href="javascript:;" class="list-group-item">Subitem 2</a>
+	      <a href="javascript:;" class="list-group-item">Subitem 3</a>
+	    </div>
 		</ul>
 		
 
 		</div>
 	</body>
+	<footer>
+	</footer>
 </html>
