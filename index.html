@@ -10,32 +10,39 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
+	<!--Debut de la barre de navigation-->
 		<div class="navbar">
-		<img src="img/logo.png" alt="Logo">
-		<p style="font-size: 10px">Cabinet Géomètre expert à Pissos</p>
+		<img src="img/logo.png" style="margin-top: 15px" alt="Logo"><br>
+		<img src="img/titre_logo.png" alt="Titre Logo">
 		<ul class="nav nav-pills nav-stacked">
-		<li role="presentation" class="active"><a href="#">Link</a></li>
-		<a href="#demo3" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">Item 3</a>
-	    <div class="collapse" id="demo3">
-	      <a href="#SubMenu1" class="list-group-item" data-toggle="collapse" data-parent="#SubMenu1">Subitem 1 <i class="fa fa-caret-down"></i></a>
-	      <div class="collapse list-group-submenu" id="SubMenu1">
-	        <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 1 a</a>
-	        <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 2 b</a>
-	        <a href="#SubSubMenu1" class="list-group-item" data-toggle="collapse" data-parent="#SubSubMenu1">Subitem 3 c <i class="fa fa-caret-down"></i></a>
-	        <div class="collapse list-group-submenu list-group-submenu-1" id="SubSubMenu1">
-	          <a href="#" class="list-group-item" data-parent="#SubSubMenu1">Sub sub item 1</a>
-	          <a href="#" class="list-group-item" data-parent="#SubSubMenu1">Sub sub item 2</a>
-	        </div>
-	        <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 4 d</a>
-	      </div>
-	      <a href="javascript:;" class="list-group-item">Subitem 2</a>
-	      <a href="javascript:;" class="list-group-item">Subitem 3</a>
+		<li class="active"><a style="margin-top: 25px" href="#">Accueil</a></li>
+		<li><a href="#services" data-toggle="collapse">Services</a></li>	
+	    <div class="collapse" id="services">
+	      <a href="javascript:;" class="list-group-item">Maitrise d'oeuvre</a>
+	      <a href="javascript:;" class="list-group-item">Aménagements</a>
+	      <a href="javascript:;" class="list-group-item">Travaux Spécifiques</a>
+	      <a href="javascript:;" class="list-group-item">Foncier</a>
 	    </div>
+	    <li><a href="#">Partenaires</a></li>
+	    <li><a href="#">Contact</a></li>
 		</ul>
-		
-
 		</div>
+	<!--Fin de la barre de navigation-->
+
 	</body>
 	<footer>
+
+	<!--Script D'affichage Jquerry-->
+	<script type="text/javascript">
+	$('.navbar li').click(function(e) {
+	    $('.navbar li.active').removeClass('active');
+	    var $this = $(this);
+	    if (!$this.hasClass('active')) {
+	        $this.addClass('active');
+	    }
+	    e.preventDefault();
+	});
+	</script>
+	<!--Script D'affichage Jquerry-->
 	</footer>
 </html>
