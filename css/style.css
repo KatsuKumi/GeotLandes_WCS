@@ -10,26 +10,15 @@
     box-shadow: 2px 2px 5px;
     text-align: center;
 }
-.navbarmobile{
-	width: 100%;
-	position: fixed;
-	height: 35px;
-	z-index: 1;
-	top: 0;
-	left: 0;
-	background-color: #E3E3E3;
-    box-shadow: 2px 2px 5px;
-}
-.burgermenu{
-    float:right;
-}
 .thumbnail{
 	margin-top: 60px;
 }
 
 @media (min-width: 320px){
 	.navbar{
-		visibility: hidden;
+		width: 100px;
+		margin-left: -150px;
+		visibility: visible;
 	}
 	.navbarmobile{
 		visibility: visible;
@@ -41,9 +30,10 @@
 		height: 35px;
 	}
 }
-@media (min-width: 768px){
+@media (min-width: 767px){
 	.navbar{
 		width: 125px;
+		margin-left: 0px;
 		visibility: visible;
 	}
 	.navbarmobile{
@@ -56,9 +46,10 @@
 		height: 60px;
 	}
 }
-@media (min-width: 1200px){
+@media (min-width: 1199px){
 	.navbar{
 		width: 250px;
+		margin-left: 0px;
 		visibility: visible;
 	}
 	.navbarmobile{
@@ -74,4 +65,36 @@
 }
 .list-group-submenu {
   margin-left:20px;
+}
+#burgerbutton{
+	border: none;
+	background: none;
+	top: 0px;
+	left: 0px;
+	float: right;
+}
+.navbarmobile{
+	width: 100%;
+	position: fixed;
+	height: 40px;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #E3E3E3;
+    box-shadow: 2px 2px 5px;
+}
+.navbarmobile img{
+	margin: 2px;
+}
+
+.burgermenu{
+    float:right;
+}
+
+.icon-bar{
+    display: block;
+	border: solid black;
+    width: 35px;
+    height: 1px;
+    margin: 6px 0;
 }
