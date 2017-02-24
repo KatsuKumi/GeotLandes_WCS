@@ -10,6 +10,64 @@
     box-shadow: 2px 2px 5px;
     text-align: center;
 }
+.navbarmobile{
+	width: 100%;
+	position: fixed;
+	height: 35px;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #E3E3E3;
+    box-shadow: 2px 2px 5px;
+}
+.burgermenu{
+    float:right;
+}
+.thumbnail{
+	margin-top: 60px;
+}
+
+@media (min-width: 320px){
+	.navbar{
+		visibility: hidden;
+	}
+	.navbarmobile{
+		visibility: visible;
+	}
+	#titrelogo{
+		visibility: hidden;
+	}
+	#logo{
+		height: 35px;
+	}
+}
+@media (min-width: 768px){
+	.navbar{
+		width: 125px;
+		visibility: visible;
+	}
+	.navbarmobile{
+		visibility: hidden;
+	}
+	#titrelogo{
+		visibility: hidden;
+	}
+	#logo{
+		height: 60px;
+	}
+}
+@media (min-width: 1200px){
+	.navbar{
+		width: 250px;
+		visibility: visible;
+	}
+	.navbarmobile{
+		visibility: hidden;
+	}
+	#titrelogo{
+		visibility: visible;
+	}
+}
 .list-group.panel > .list-group-item {
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px

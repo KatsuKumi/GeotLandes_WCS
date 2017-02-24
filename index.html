@@ -3,7 +3,6 @@
 	<head>
 		<meta charset="utf-8">
 		<title>GéotLandes - Géomètre expert</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -12,10 +11,10 @@
 	<body>
 	<!--Debut de la barre de navigation-->
 		<div class="navbar">
-		<img src="img/logo.png" style="margin-top: 15px" alt="Logo"><br>
-		<img src="img/titre_logo.png" alt="Titre Logo">
+		<img src="img/logo.png" alt="Logo" id="logo" style="margin-top: 15px"><br>
+		<img src="img/titre_logo.png" alt="Titre Logo" id="titrelogo">
 		<ul class="nav nav-pills nav-stacked">
-		<li class="active"><a style="margin-top: 25px" href="#">Accueil</a></li>
+		<li class="active"><a style="margin-top: 1vw" href="#">Accueil</a></li>
 		<li><a href="#services" data-toggle="collapse">Services</a></li>	
 	    <div class="collapse" id="services">
 	      <a href="javascript:;" class="list-group-item">Maitrise d'oeuvre</a>
@@ -28,10 +27,27 @@
 		</ul>
 		</div>
 	<!--Fin de la barre de navigation-->
+		<div class="navbarmobile">
+		<img src="img/logo.png" alt="Logo" id="logo">
+		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+        </button>
+		<button class="dropdown-toggle burgermenu" type="button" data-toggle="dropdown">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span></button>
+	    <ul class="dropdown-menu dropdown-menu-right">
+	      <li><a href="#">HTML</a></li>
+	      <li><a href="#">CSS</a></li>
+	      <li><a href="#">JavaScript</a></li>
+	    </ul>
+		</div>
 
 	</body>
 	<footer>
-
 	<!--Script D'affichage Jquerry-->
 	<script type="text/javascript">
 	$('.navbar li').click(function(e) {
