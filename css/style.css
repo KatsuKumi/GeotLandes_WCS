@@ -1,19 +1,24 @@
+
 .navbar {
     height: 100%; /* 100% Full-height */
     width: 250px; 
+	margin-left: 0px;
     position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
+    z-index:1000; /* Stay on top */
     top: 0;
     left: 0;
-    background-color: #E3E3E3; 
+    background-color: white; 
     overflow-x: hidden; /* Disable horizontal scroll */
     box-shadow: 2px 2px 5px;
     text-align: center;
 }
+.content{
+	padding-left: 250px;
+}
+
 .thumbnail{
 	margin-top: 60px;
 }
-
 @media (min-width: 320px){
 	.navbar{
 		width: 100px;
@@ -28,6 +33,12 @@
 	}
 	#logo{
 		height: 35px;
+	}
+	.content{
+		padding-left: 0px;
+	}
+	#welcomescreen{
+		font-size: 12px;
 	}
 }
 @media (min-width: 767px){
@@ -45,6 +56,12 @@
 	#logo{
 		height: 60px;
 	}
+	.content{
+		padding-left: 125px;
+	}
+	#welcomescreen{
+		font-size: 14px;
+	}
 }
 @media (min-width: 1199px){
 	.navbar{
@@ -58,6 +75,13 @@
 	#titrelogo{
 		visibility: visible;
 	}
+	.content{
+		padding-left: 250px;
+	}
+
+	#welcomescreen{
+		font-size: 18px;
+	}
 }
 .list-group.panel > .list-group-item {
   border-bottom-right-radius: 4px;
@@ -65,6 +89,18 @@
 }
 .list-group-submenu {
   margin-left:20px;
+}
+.slider img{
+    width: 100%; /* you can use % */
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+}
+.slider{
+    width: 50%; /* you can use % */
+	margin: 50px;
+    margin:auto;	
+    overflow: hidden;
 }
 #burgerbutton{
 	border: none;
@@ -97,4 +133,38 @@
     width: 35px;
     height: 1px;
     margin: 6px 0;
+}
+h4{
+
+  line-height: 30px; 	
+}
+#welcomescreen {
+  display: table;
+  width: 100%;
+  padding-top: 150px;
+  padding-bottom: 300px;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+  color: white;
+  background: url(../img/bg.JPG) no-repeat center scroll;
+  background-color: #E3E3E3;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+#logowelcome{
+	width: 100px;
+	height: auto;
+}
+.intro .intro-body {
+  display: table-cell;
+  vertical-align: middle;
+}
+.intro .intro-body .brand-heading {
+  font-size: 40px;
+}
+.intro .intro-body .intro-text {
+  font-size: 18px;
 }
