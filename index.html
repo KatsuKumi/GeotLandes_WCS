@@ -1,267 +1,118 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>GéotLandes - Géomètre expert</title>
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<script src="js/jquery-3.1.1.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<script>
-		$(function(){
-			$("#content").wrapInner("<table cellspacing='30'><tr>");
-			$(".post").wrap("<td></td>");
-		});
-		</script>
-	</head>
+<head>
+	<meta charset="utf-8">
+	<title>GéotLandes - Géomètre expert</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<body>
-	<!--Debut de la barre de navigation-->
-		
+		<!--Debut de la barre de navigation-->
+
 		<div class="navbarmobile">
-		<img src="img/logo.png" alt="Logo" id="logo">
-		<img src="img/titre_logo.png" alt="Titre Logo">
-        <button id="burgerbutton">
-        	<div class="icon-bar"></div>
-        	<div class="icon-bar"></div>
-        	<div class="icon-bar"></div>
-        </button>
+			<img src="img/logo.png" alt="Logo" id="logo">
+			<img src="img/titre_logo.png" alt="Titre Logo">
+			<button id="burgerbutton">
+				<div class="icon-bar"></div>
+				<div class="icon-bar"></div>
+				<div class="icon-bar"></div>
+			</button>
 		</div>
 		<nav class="navbar navbar-default sidebar" role="navigation">
-		<div class="navbar">
-		<img src="img/logo.png" alt="Logo" id="logo" style="margin-top: 15px"><br>
-		<img src="img/titre_logo.png" alt="Titre Logo" id="titrelogo">
-		<ul class="nav nav-pills nav-stacked">
-		<li class="active"><a style="margin-top: 1vw" href="#" id="acceuilbtn">Accueil</a></li>
-		<li><a href="#services" data-toggle="collapse" id="servicebtn">Services</a></li>	
-	    <div class="collapse" id="services">
-	      <a href="javascript:;" class="list-group-item">Maitrise d'oeuvre</a>
-	      <a href="javascript:;" class="list-group-item">Aménagements</a>
-	      <a href="javascript:;" class="list-group-item">Travaux Spécifiques</a>
-	      <a href="javascript:;" class="list-group-item">Foncier</a>
-	    </div>
-	    <li><a href="#" id="partbtn">Partenaires</a></li>
-	    <li><a href="#" id="contactbtn">Contact</a></li>
-		</ul>
-		</div>
-		</nav>
-	<!--Fin de la barre de navigation-->
-	<!--Debut du contenu du site-->
-	<div class="content">
-		<!--Debut du contenu de l'acceuil-->
-		<div id="acceuil" class="post actif">
-			<div id="welcomescreen">
-
-				<img src="img/logo.png" alt="Logo" id="logowelcome" style="margin-bottom: 15px"><br>
-				<h1>Bienvenue !</h1>
-				<span>Bienvenue sur le site de Géotlandes. Après 30 ans d'expérience sur le secteur de la haute Landes, Cécile Bibette 
-
-		ainsi que Benôit Labat ont crée la SARL GEOTLANDES à Pissos en début d'année 2012.  Depuis, Geotlandes
-
-		vous accompagne pour tous vos projets d'aménagement qu'ils soient urbains ou ruraux, vos maitrises d'oeuvres
-
-		ainsi que différents travaux spécifiques comme  l'aménagement agricole et irrigation ou encore le cubage de bois. </span>
-				</div>
-			<div class="row">
-
-
-				<div class="slider">
-				    <div id="slidergeo" class="carousel slide" data-ride="carousel">
-				        <!-- Carousel indicators -->
-				        <ol class="carousel-indicators">
-				            <li data-target="#slidergeo" data-slide-to="0" class="active"></li>
-				            <li data-target="#slidergeo" data-slide-to="1"></li>
-				            <li data-target="#slidergeo" data-slide-to="2"></li>
-				        </ol>   
-				        <!-- Wrapper for carousel items -->
-				        <div class="carousel-inner">
-				            <div class="item active">
-				                <img src="img/1.jpg" alt="First Slide">
-				            </div>
-				            <div class="item">
-				                <img src="img/2.jpg" alt="Second Slide">
-				            </div>
-				            <div class="item">
-				                <img src="img/3.jpg" alt="Third Slide">
-				            </div>
-				        </div>
-				        <!-- Carousel controls -->
-				        <a class="carousel-control left" href="#slidergeo" data-slide="prev">
-				            <span class="glyphicon glyphicon-chevron-left"></span>
-				        </a>
-				        <a class="carousel-control right" href="#slidergeo" data-slide="next">
-				            <span class="glyphicon glyphicon-chevron-right"></span>
-				        </a>
-				    </div>
-			  </div>
-
-
+			<div class="navbar">
+				<img src="img/logo.png" alt="Logo" id="logo" style="margin-top: 15px"><br>
+				<img src="img/titre_logo.png" alt="Titre Logo" id="titrelogo">
+				<ul class="nav nav-pills nav-stacked">
+					<li class="active"><a style="margin-top: 1vw" href="#" id="acceuilbtn" data-target="acceuil">Accueil</a></li>
+					<li><a href="#services" data-toggle="collapse" id="servicebtn" data-target="service">Services</a></li>	
+					<div class="collapse" id="services">
+						<a href="javascript:;" class="list-group-item">Maitrise d'oeuvre</a>
+						<a href="javascript:;" class="list-group-item">Aménagements</a>
+						<a href="javascript:;" class="list-group-item">Travaux Spécifiques</a>
+						<a href="javascript:;" class="list-group-item">Foncier</a>
+					</div>
+					<li><a href="#" id="partbtn" data-target="part">Partenaires</a></li>
+					<li><a href="#" id="contactbtn" data-target="contact">Contact</a></li>
+				</ul>
 			</div>
-		</div>
-		<!--Fin du contenu de l'acceuil-->
-		<!--Debut du contenu de services-->
-		<div id="service" class="post">
-		<br>
-		<br>
-		<span>service ici</span>
-		</div>
-		<!--Fin du contenu de services-->
-		<!--Debut du contenu de partenaires-->
-		<div id="part" class="post">
-		<br>
-		<br>
-		<span>partenaire ici</span>
-		</div>
-		<!--Fin du contenu de partenaires-->
-		<!--Debut du contenu de contact-->
-		<div id="contact" class="post">
-		<br>
-		<br>
-		<span>Contact ici</span>
-		</div>
-		<!--Fin du contenu de contact-->
-	</div>
-	<!--Fin du contenu du site-->
-	</body>
-	<footer>
-	<!--Script D'affichage Jquerry-->
+		</nav>
+		<!--Fin de la barre de navigation-->
+		<!--Debut du contenu du site-->
+		<div class="content">
+			<!--Debut du contenu de l'acceuil-->
+			<div id="acceuil" class="post actif">
+				<div id="welcomescreen">
 
-	<script type="text/javascript">
-	/* Ici je supprime la class active à tout les éléments et je l'affiche sur l'élément cliquer*/
-	$('.navbar li').click(function(e) {
-	    $('.navbar li.active').removeClass('active');
-	    var $this = $(this);
-	    if (!$this.hasClass('active')) {
-	        $this.addClass('active');
-	    }
-	    e.preventDefault();
-	});
-	</script>
+					<img src="img/logo.png" alt="Logo" id="logowelcome" style="margin-bottom: 15px"><br>
+					<h1>Bienvenue !</h1>
+					<span>Bienvenue sur le site de Géotlandes. Après 30 ans d'expérience sur le secteur de la haute Landes, Cécile Bibette 
 
-	<script type="text/javascript">
-		/* Ici j'affiche la bar de navigation quand le button burger est cliquer (mobile)*/
-		$('#burgerbutton').click(function(){
-			if($('.navbar').css("margin-left") == 0+"px" && !$('.navbar').is(':animated'))
-		    {
-		        $('.navbar').animate({"margin-left": '-='+150});
+						ainsi que Benôit Labat ont crée la SARL GEOTLANDES à Pissos en début d'année 2012.  Depuis, Geotlandes
 
-		    }
-		    else
-		    {
-		        if(!$('.navbar').is(':animated'))//perevent double click to double margin
-		        {
-		        $('.navbar').animate({"margin-left": '+='+150});
-		        }
-		    }
-		});
-		/* Ici j'handle la modification de taille pour le rendre résponsif*/
-		$(window).resize(function() {
-			var width = screen.width;
-			if (width >= 768){
-		        $('.navbar').css( "margin-left", "0" );
-			}
-			resizepost();
-			recadragecontent();
-		}); 
-		/* Ici je modifie la taille de chaque cadre de contenu à chaque modification de taille*/
+						vous accompagne pour tous vos projets d'aménagement qu'ils soient urbains ou ruraux, vos maitrises d'oeuvres
 
-		function resizepost()
-		{
-			var width = screen.width;
-			var navbar = $('.navbar').width();
-			if (navbar <= 100){
-				$('.post').css( "width", width );
-			}
-			else{
-				$('.post').css( "width", width - navbar );
-			}
-		};
-		/* Ici je replace le cadre avec tout le contenu suivant quelle contenu est actif, à chaque modification de taille*/
-		function recadragecontent(){
-			var width = screen.width;
-			var navbar = $('.navbar').width();
-			var multiplier = getmultiplier();
-			if (navbar <= 100){
-			  	$('.content').css({"margin-left": (-width * multiplier ) });
-			}
-			else{
-		  	$('.content').css({"margin-left": (-width* multiplier) + (navbar * multiplier)});
-			}
-		}
+						ainsi que différents travaux spécifiques comme  l'aménagement agricole et irrigation ou encore le cubage de bois. </span>
+					</div>
+					<div class="row">
 
-		function getmultiplier(){
-			var actif = $('.content .post.actif')[0].id;
-			console.log(actif);
-			if (actif == "service"){
-				return 1;
-			}
-			else if (actif == "part"){
-				return 2;
-			}
-			else if (actif == "contact"){
-				return 3;
-			}
-			return 0;
-		}
-		/* Ici (x4) je slide de gauche à droite suivant quelle bouton est appuyer ( En réalité je pourrais faire ça plus court, mais c'est plus lisible comme ça*/
 
-		$('#acceuilbtn').click(function(){
-			var width = screen.width;
-			var navbar = $('.navbar').width();
-			if (navbar <= 100){
-		  	$('.content').animate({"margin-left": 0});
-			}
-			else{
-		  	$('.content').animate({"margin-left": 0});
-			}
-	   	    $('.content .post.actif').removeClass('actif');
-	        $('#acceuil').addClass('actif');
-		});
-		$('#servicebtn').click(function(){
-			var width = screen.width;
-			var navbar = $('.navbar').width();
-			if (navbar <= 100){
-		  	$('.content').animate({"margin-left": (-width*1) });
-			}
-			else{
-		  	$('.content').animate({"margin-left": (-width*1) + (navbar * 1)});
-			}
-	   	    $('.content .post.actif').removeClass('actif');
-	        $('#service').addClass('actif');
-		});
-		$('#partbtn').click(function(){
-			var width = screen.width;
-			var navbar = $('.navbar').width();
-			if (navbar <= 100){
-		  	$('.content').animate({"margin-left": (-width*2) });
-			}
-			else{
-		  	$('.content').animate({"margin-left": (-width*2) + (navbar * 2)});
-			}
-	   	    $('.content .post.actif').removeClass('actif');
-	        $('#part').addClass('actif');
-		});
-		$('#contactbtn').click(function(){
-			var width = screen.width;
-			var navbar = $('.navbar').width();
-			if (navbar <= 100){
-		  	$('.content').animate({"margin-left": (-width*3) });
-			}
-			else{
-		  	$('.content').animate({"margin-left": (-width*3) + (navbar * 3)});
-			}
-	   	    $('.content .post.actif').removeClass('actif');
-	        $('#contact').addClass('actif');
-		});
-		resizepost();
-	</script>
-	*
-	<script>
-	/*Ici je place des tables pour les contenu*/
-	$(function(){
-		$("#content").wrapInner("<table cellspacing='30'><tr>");
-		$(".post").wrap("<td></td>");
-	});
-	</script>
-	<!--Script D'affichage Jquerry-->
+						<div class="slider">
+							<div id="slidergeo" class="carousel slide" data-ride="carousel">
+								<!-- Carousel indicators -->
+								<ol class="carousel-indicators">
+									<li data-target="#slidergeo" data-slide-to="0" class="active"></li>
+									<li data-target="#slidergeo" data-slide-to="1"></li>
+									<li data-target="#slidergeo" data-slide-to="2"></li>
+								</ol>   
+								<!-- Wrapper for carousel items -->
+								<div class="carousel-inner">
+									<div class="item active">
+										<img src="img/1.jpg" alt="First Slide">
+									</div>
+									<div class="item">
+										<img src="img/2.jpg" alt="Second Slide">
+									</div>
+									<div class="item">
+										<img src="img/3.jpg" alt="Third Slide">
+									</div>
+								</div>
+								<!-- Carousel controls -->
+								<a class="carousel-control left" href="#slidergeo" data-slide="prev">
+									<span class="glyphicon glyphicon-chevron-left"></span>
+								</a>
+								<a class="carousel-control right" href="#slidergeo" data-slide="next">
+									<span class="glyphicon glyphicon-chevron-right"></span>
+								</a>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+				<!--Fin du contenu de l'acceuil-->
+				<!--Debut du contenu de services-->
+				<div id="service" class="post">
+					<span>service ici</span>
+				</div>
+				<!--Fin du contenu de services-->
+				<!--Debut du contenu de partenaires-->
+				<div id="part" class="post">
+					<span>partenaire ici</span>
+				</div>
+				<!--Fin du contenu de partenaires-->
+				<!--Debut du contenu de contact-->
+				<div id="contact" class="post">
+					<span>Contact ici</span>
+				</div>
+				<!--Fin du contenu de contact-->
+			</div>
+			<!--Fin du contenu du site-->
+		</body>
+		<footer>
+			<!--Script D'affichage Jquerry-->
+			<script src="js/affichage.js"></script>
+		</head>
+		<!--Script D'affichage Jquerry-->
 	</footer>
 </html>

@@ -1,16 +1,16 @@
 
 .navbar {
-    height: 100%; /* 100% Full-height */
-    width: 250px; 
+	height: 100%; /* 100% Full-height */
+	width: 250px; 
 	margin-left: 0px;
-    position: fixed; /* Stay in place */
-    z-index:1000; /* Stay on top */
-    top: 0;
-    left: 0;
-    background-color: white; 
-    overflow-x: hidden; /* Disable horizontal scroll */
-    box-shadow: 2px 2px 5px;
-    text-align: center;
+	position: fixed; /* Stay in place */
+	z-index:1000; /* Stay on top */
+	top: 0;
+	left: 0;
+	background-color: white; 
+	overflow-x: hidden; /* Disable horizontal scroll */
+	box-shadow: 2px 2px 5px;
+	text-align: center;
 }
 .content{
 	padding-left: 250px;
@@ -88,22 +88,21 @@
 	}
 }
 .list-group.panel > .list-group-item {
-  border-bottom-right-radius: 4px;
-  border-bottom-left-radius: 4px
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px
 }
 .list-group-submenu {
-  margin-left:20px;
+	margin-left:20px;
 }
 .slider img{
-    width: 100%; /* you can use % */
-    text-align: center;
-    vertical-align: middle;
-    overflow: hidden;
+	width: 100%; /* you can use % */
+	text-align: center;
+	vertical-align: middle;
+	overflow: hidden;
 }
 .slider{
-    width: 100%; /* you can use % */
-    margin-top: 20px;
-    overflow: hidden;
+	width: 100%; /* you can use % */
+	overflow: hidden;
 }
 #burgerbutton{
 	border: none;
@@ -120,54 +119,44 @@
 	top: 0;
 	left: 0;
 	background-color: #E3E3E3;
-    box-shadow: 2px 2px 5px;
+	box-shadow: 2px 2px 5px;
 }
 .navbarmobile img{
 	margin: 2px;
 }
 
 .burgermenu{
-    float:right;
+	float:right;
 }
 
 .icon-bar{
-    display: block;
+	display: block;
 	border: solid black;
-    width: 35px;
-    height: 1px;
-    margin: 6px 0;
+	width: 35px;
+	height: 1px;
+	margin: 6px 0;
 }
 h4{
 
-  line-height: 30px; 	
+	line-height: 30px; 	
 }
 #welcomescreen {
-  display: table;
-  width: 100%;
-  padding-top: 150px;
-  padding-bottom: 300px;
-  padding-left: 50px;
-  padding-right: 50px;
-  text-align: center;
-  color: white;
-  background: url(../img/bg.JPG) no-repeat center scroll;
-  background-color: #E3E3E3;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
+	display: table;
+	width: 100%;
+	padding-top: 150px;
+	padding-bottom: 300px;
+	padding-left: 50px;
+	padding-right: 50px;
+	text-align: center;
+	color: white;
+	background: url(../img/bg.JPG) no-repeat center scroll;
+	background-color: #E3E3E3;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
 }
 #logowelcome{
 	width: 100px;
 	height: auto;
-}
-.intro .intro-body {
-  display: table-cell;
-  vertical-align: middle;
-}
-.intro .intro-body .brand-heading {
-  font-size: 40px;
-}
-.intro .intro-body .intro-text {
-  font-size: 18px;
 }
