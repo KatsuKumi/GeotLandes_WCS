@@ -54,7 +54,7 @@ function getWindowWidth() {
 }
 function resizepost()
 {
-	var width = getWindowWidth();
+	var width = document.documentElement.clientWidth;
 	var navbar = $('.navbar').width();
 	console.log(width);	
 
