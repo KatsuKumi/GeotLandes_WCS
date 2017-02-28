@@ -35,11 +35,29 @@ $(window).resize(function() {
 	recadragecontent();
 }); 
 /* Ici je modifie la taille de chaque cadre de contenu à chaque modification de taille*/
-
+function getWindowWidth() {
+    var windowWidth = 0;
+    if (typeof(window.innerWidth) == 'number') {
+        windowWidth = window.innerWidth;
+    }
+    else {
+        if (document.documentElement && document.documentElement.clientWidth) {
+            windowWidth = document.documentElement.clientWidth;
+        }
+        else {
+            if (document.body && document.body.clientWidth) {
+                windowWidth = document.body.clientWidth;
+            }
+        }
+    }
+    return windowWidth;
+}
 function resizepost()
 {
-	var width = screen.width;
+	var width = getWindowWidth();
 	var navbar = $('.navbar').width();
+	console.log(width);	
+
 	if (navbar <= 200){
 		$('.post').css( "width", width );
 	}
@@ -50,9 +68,9 @@ function resizepost()
 resizepost();
 /* Ici je replace le cadre avec tout le contenu suivant quelle contenu est actif, à chaque modification de taille*/
 function recadragecontent(){
-	var width = screen.width;
+	var width = getWindowWidth();
 	var navbar = $('.navbar').width();
-	var actif = $('.content .post.actif')[0].id;
+	var actif = $('.content .post.actif')[0].id; 
 	var multiplier = getmultiplier(actif);
 	if (navbar <= 200){
 		$('.content').css({"margin-left": (-width * multiplier ) });
@@ -78,7 +96,7 @@ function getmultiplier(id){
 $('.navbar a').click(function(){
 	var id = $(this).data("target");
 	var multiplier = getmultiplier(id);
-	var width = screen.width;
+	var width = getWindowWidth();
 	var navbar = $('.navbar').width();
 	if (navbar <= 200){
 		$('.content').animate({"margin-left": (-width*multiplier) });
