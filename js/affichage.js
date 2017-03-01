@@ -27,12 +27,13 @@ $('#burgerbutton').click(function(){
 });
 /* Ici j'handle la modification de taille pour le rendre résponsif*/
 $(window).resize(function() {
-	var width = screen.width;
-	if (width >= 768){
-		$('.navbar').css( "margin-left", "0" );
-	}
+	var width = getWindowWidth();
+	console.log(width);
+	swiper = new Swiper('.swiper-container');
+	swiper.update();
 	resizepost();
 	recadragecontent();
+
 }); 
 /* Ici je modifie la taille de chaque cadre de contenu à chaque modification de taille*/
 function getWindowWidth() {
@@ -54,16 +55,10 @@ function getWindowWidth() {
 }
 function resizepost()
 {
-	var width = document.documentElement.clientWidth;
+	var width = getWindowWidth();
 	var navbar = $('.navbar').width();
-	console.log(width);	
+	$('.post').css( "width", width );
 
-	if (navbar <= 200){
-		$('.post').css( "width", width );
-	}
-	else{
-		$('.post').css( "width", width - navbar );
-	}
 };
 resizepost();
 /* Ici je replace le cadre avec tout le contenu suivant quelle contenu est actif, à chaque modification de taille*/
@@ -72,12 +67,7 @@ function recadragecontent(){
 	var navbar = $('.navbar').width();
 	var actif = $('.content .post.actif')[0].id; 
 	var multiplier = getmultiplier(actif);
-	if (navbar <= 200){
-		$('.content').css({"margin-left": (-width * multiplier ) });
-	}
-	else{
-		$('.content').css({"margin-left": (-width* multiplier) + (navbar * multiplier)});
-	}
+	$('.post ').css({"margin-left": (-width * multiplier ) });
 }
 
 function getmultiplier(id){
@@ -98,14 +88,8 @@ $('.navbar a').click(function(){
 	var multiplier = getmultiplier(id);
 	var width = getWindowWidth();
 	var navbar = $('.navbar').width();
-	if (navbar <= 200){
-		$('.content').animate({"margin-left": (-width*multiplier) });
-	}
-	else{
-		$('.content').animate({"margin-left": (-width*multiplier) + (navbar * multiplier)});
-	}
-	$('.content .post.actif').removeClass('actif');
-	$('#' + id).addClass('actif');
+	swiper.slideTo(multiplier, 1000, true);
+	
 });
 $('.content').click(function(){
 	var navbar = $('.navbar').width();
@@ -114,12 +98,3 @@ $('.content').click(function(){
 		$('.content').css({"filter": "brightness(100%)"})
 	}
 })
-/*Ici je place des tables pour les contenu*/
-$(function(){
-	$("#content").wrapInner("<table cellspacing='30'><tr>");
-	$(".post").wrap("<td></td>");
-});
-$(function(){
-	$("#content").wrapInner("<table cellspacing='30'><tr>");
-	$(".post").wrap("<td></td>");
-});

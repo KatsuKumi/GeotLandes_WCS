@@ -8,6 +8,7 @@
 	<script src="js/bootstrap.min.js"></script>
 	 <meta name="viewport" content="minimum-scale=1, maximum-scale=1, width=device-width" />
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/swiper.css">
 	<body>
 		<!--Debut de la barre de navigation-->
 
@@ -20,7 +21,7 @@
 				<div class="icon-bar"></div>
 			</button>
 		</div>
-		<nav class="navbar navbar-default sidebar" role="navigation">
+		<nav class="navbare" role="navigation">
 			<div class="navbar">
 				<img src="img/logo.png" alt="Logo" id="logo" style="margin-top: 15px"><br>
 				<img src="img/titre_logo.png" alt="Titre Logo" id="titrelogo">
@@ -40,9 +41,10 @@
 		</nav>
 		<!--Fin de la barre de navigation-->
 		<!--Debut du contenu du site-->
-		<div class="content">
+		<div class="content swiper-container">
+		<div class="swiper-wrapper">
 			<!--Debut du contenu de l'acceuil-->
-			<div id="acceuil" class="post actif">
+			<div id="acceuil" class="post actif swiper-slide">
 				<div id="welcomescreen">
 
 					<img src="img/logo.png" alt="Logo" id="logowelcome" style="margin-bottom: 15px"><br>
@@ -93,26 +95,50 @@
 				</div>
 				<!--Fin du contenu de l'acceuil-->
 				<!--Debut du contenu de services-->
-				<div id="service" class="post">
+				<div id="service" class="post swiper-slide">
 					<span>service ici</span>
 				</div>
 				<!--Fin du contenu de services-->
 				<!--Debut du contenu de partenaires-->
-				<div id="part" class="post">
+				<div id="part" class="post swiper-slide">
 					<span>partenaire ici</span>
 				</div>
 				<!--Fin du contenu de partenaires-->
 				<!--Debut du contenu de contact-->
-				<div id="contact" class="post">
+				<div id="contact" class="post swiper-slide">
 					<span>Contact ici</span>
 				</div>
 				<!--Fin du contenu de contact-->
 			</div>
+			</div>
 			<!--Fin du contenu du site-->
 		</body>
 		<footer>
-			<!--Script D'affichage Jquerry-->
+    <!-- Swiper JS -->
 			<script src="js/affichage.js"></script>
+   			<script src="js/swiper.min.js"></script>
+			<!-- Initialize Swiper -->
+			<script type="text/javascript">
+			var swiper = new Swiper('.swiper-container', {
+				touchRatio: 2,
+				onSlideChangeEnd: function (swiper) {
+					$('.navbar li.active').removeClass('active');
+                    //after Event use it for your purpose
+                    if (swiper.activeIndex == 0) {
+						$('#acceuilbtn').closest( "li" ).addClass('active');
+                    }
+                    else if (swiper.activeIndex == 1) {
+						$('#servicebtn').closest( "li" ).addClass('active');
+                    }
+                    else if (swiper.activeIndex == 2) {
+						$('#partbtn').closest( "li" ).addClass('active');
+                    }
+                    else{
+						$('#contactbtn').closest( "li" ).addClass('active');
+                    }
+                }
+			});
+			</script>
 		</head>
 		<!--Script D'affichage Jquerry-->
 	</footer>
