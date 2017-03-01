@@ -10,17 +10,17 @@ $('.navbar li').click(function(e) {
 });
 /* Ici j'affiche la bar de navigation quand le button burger est cliquer (mobile)*/
 $('#burgerbutton').click(function(){
-	if($('.navbar').css("margin-left") == 0+"px" && !$('.navbar').is(':animated'))
+	if($('.navbare').css("margin-left") == 0+"px" && !$('.navbare').is(':animated'))
 	{
-		$('.navbar').animate({"margin-left": '-='+230});
+		$('.navbare').animate({"margin-left": '-='+230});
 		$('.content').css({"filter": "brightness(100%)"})
 
 	}
 	else
 	{
-		if(!$('.navbar').is(':animated'))//perevent double click to double margin
+		if(!$('.navbare').is(':animated'))//perevent double click to double margin
 		{
-			$('.navbar').animate({"margin-left": '+='+230});
+			$('.navbare').animate({"margin-left": '+='+230});
 			$('.content').css({"filter": "brightness(40%)"})
 		}
 	}
@@ -56,7 +56,7 @@ function getWindowWidth() {
 function resizepost()
 {
 	var width = getWindowWidth();
-	var navbar = $('.navbar').width();
+	var navbar = $('.navbare').width();
 	$('.post').css( "width", width );
 
 };
@@ -64,7 +64,7 @@ resizepost();
 /* Ici je replace le cadre avec tout le contenu suivant quelle contenu est actif, à chaque modification de taille*/
 function recadragecontent(){
 	var width = getWindowWidth();
-	var navbar = $('.navbar').width();
+	var navbar = $('.navbare').width();
 	var actif = $('.content .post.actif')[0].id; 
 	var multiplier = getmultiplier(actif);
 	$('.post ').css({"margin-left": (-width * multiplier ) });
@@ -87,14 +87,14 @@ $('.navbar a').click(function(){
 	var id = $(this).data("target");
 	var multiplier = getmultiplier(id);
 	var width = getWindowWidth();
-	var navbar = $('.navbar').width();
+	var navbar = $('.navbare').width();
 	swiper.slideTo(multiplier, 1000, true);
 	
 });
 $('.content').click(function(){
-	var navbar = $('.navbar').width();
-	if (navbar <= 200 && !$('.navbar').is(':animated') && $('.navbar').css("margin-left") == "0px"){
-		$('.navbar').animate({"margin-left": '-='+230});
+	var navbar = $('.navbare').width();
+	if (navbar <= 200 && !$('.navbare').is(':animated') && $('.navbare').css("margin-left") == "0px"){
+		$('.navbare').animate({"margin-left": '-='+230});
 		$('.content').css({"filter": "brightness(100%)"})
 	}
 })
