@@ -10,10 +10,9 @@
 	background-color: white; 
 	overflow-x: hidden; /* Disable horizontal scroll */
 	box-shadow: 2px 2px 5px;
-	text-align: center;
+	text-align: center;	
 }
 .content{
-	padding-left: 250px;
 	overflow: hidden;
 }
 
@@ -38,14 +37,16 @@
 	#logo{
 		height: 35px;
 	}
-	.content{
-		padding-left: 0px;
+
+	.swiper-slide{
+		padding-top: 40px;
+
 	}
 	#welcomescreen{
 		font-size: 12px;
 	}
 }
-@media screen and  (min-width: 767px){
+@media screen and (min-width: 767px){
 	.navbar{
 		width: 225px;
 		margin-left: 0px;
@@ -60,8 +61,11 @@
 	#logo{
 		height: 60px;
 	}
-	.content{
+
+	.swiper-slide{
 		padding-left: 225px;
+		padding-top: 0px;
+
 	}
 	#welcomescreen{
 		font-size: 14px;
@@ -79,10 +83,11 @@
 	#titrelogo{
 		visibility: visible;
 	}
-	.content{
+	.swiper-slide{
 		padding-left: 250px;
-	}
+		padding-top: 0px;
 
+	}
 	#welcomescreen{
 		font-size: 18px;
 	}
@@ -164,14 +169,14 @@ h4{
 	-o-background-size: cover;
 }
 #logowelcome{
-	width: 100px;
-	height: auto;
+	 width: 100px;
+	 height: auto;
 }
 .navbar li{
- text-align: left;
- padding-left: 10px;
+	 text-align: left;
+	 padding-left: 10px;
 }
 .submenu{
- text-align: left;
+	text-align: left;
 	padding-left: 50px;
 }
