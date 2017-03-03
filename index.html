@@ -3,10 +3,10 @@
 <head>
 	<meta charset="utf-8">
 	<title>GéotLandes - Géomètre expert</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	 <meta name="viewport" content="minimum-scale=1, maximum-scale=1, width=device-width" />
+	<meta name="viewport" content="minimum-scale=1, maximum-scale=1, width=device-width" />
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="css/swiper.css">
 	<body>
@@ -167,15 +167,15 @@
 				</div>
 				<!--Fin du contenu de partenaires-->
 				<!--Debut du contenu de contact-->
-				<div id="contact" class="post swiper-slide">					
+				<div id="contact" class="post swiper-slide container">					
 				<div class="row">
 						<div class="slider">
-							<div id="slidergeo" class="carousel slide" data-ride="carousel">
+							<div id="slidergeocontact" class="carousel slide" data-ride="carousel">
 								<!-- Carousel indicators -->
-								<ol class="carousel-indicators">
-									<li data-target="#slidergeo" data-slide-to="0" class="active"></li>
-									<li data-target="#slidergeo" data-slide-to="1"></li>
-									<li data-target="#slidergeo" data-slide-to="2"></li>
+								<ol class="carousel-indicators swiper-no-swiping">
+									<li data-target="#slidergeocontact" data-slide-to="0" class="active"></li>
+									<li data-target="#slidergeocontact" data-slide-to="1"></li>
+									<li data-target="#slidergeocontact" data-slide-to="2"></li>
 								</ol>   
 								<!-- Wrapper for carousel items -->
 								<div class="carousel-inner">
@@ -190,18 +190,31 @@
 									</div>
 								</div>
 								<!-- Carousel controls -->
-								<a class="carousel-control left" href="#slidergeo" data-slide="prev">
+								<a class="carousel-control left swiper-no-swiping" href="#slidergeocontact" data-slide="prev">
 									<span class="glyphicon glyphicon-chevron-left"></span>
 								</a>
-								<a class="carousel-control right" href="#slidergeo" data-slide="next">
+								<a class="carousel-control right swiper-no-swiping" href="#slidergeocontact" data-slide="next">
 									<span class="glyphicon glyphicon-chevron-right"></span>
 								</a>
 							</div>
 						</div>
 					</div>
-					<div class="cadre">
-						<span>Contact ici</span>
-						qspdnisqodip
+					<div class="test swiper-no-swiping row">
+						<h1>BIBETTE Cécile DPLG</h1>
+						<div id="cecilecontact" class="col-lg-5 col-lg-offset-2 col-md-10 col-sm-10 col-xs-12">
+						<h3 class="post-title">Géomètre-expert DPLG</h3>
+						<img src="img/contact.jpg" alt="Cecile">
+						<p>29 place de l'église
+							40210 Pissos, Landes<br>
+							FRANCE<br><br>
+							Téléphone<br><br>
+							Téléphone<br><br>
+							Téléphone<br><br>
+							cecile.bibette@orange.fr</p>
+						<button>Formulaire</button>
+						</div>
+					<div id="gmap" class="col-lg-5 col-lg-offset-2 col-md-10 col-sm-10	 col-xs-12">
+					</div>
 					</div>
 				</div>
 				<!--Fin du contenu de contact-->
@@ -213,10 +226,12 @@
     <!-- Swiper JS -->
 			<script src="js/affichage.js"></script>
    			<script src="js/swiper.min.js"></script>
+   			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAis2sSWo-UF_RPgosHey9qadmIcrqXj8&region=FR"></script>
+			<script src="js/gmaps.js"></script>
 			<!-- Initialize Swiper -->
 			<script type="text/javascript">
 			var swiper = new Swiper('.swiper-container', {
-				touchRatio: 2,
+				touchRatio: 1,
 				onSlideChangeEnd: function (swiper) {
 					$('.navbar li.active').removeClass('active');
                     //after Event use it for your purpose
@@ -233,6 +248,19 @@
 						$('#contactbtn').closest( "li" ).addClass('active');
                     }
                 }
+			});
+			var map = new GMaps({
+			  div: '#gmap',
+			  lat: 44.3084329,
+			  lng: -0.7774058,
+			});
+			map.addMarker({
+			  lat: 44.3084329,
+			  lng: -0.7774058,
+			  title: 'Géotlandes',
+			  infoWindow: {
+		          content: '<p>Géotlandes est ici</p>'
+		        }
 			});
 			</script>
 		</head>
