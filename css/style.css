@@ -1,4 +1,5 @@
-
+body{
+}
 .navbare {
 	height: 100%; /* 100% Full-height */
 	width: 250px; 
@@ -23,12 +24,9 @@
 	width: 0px;
 }
 #cecilecontact{
-		display: block;
+		display: inline-block;
 		border:2px solid grey;
-		overflow: auto
-}
-#cecilecontact p{
-	display: inline-block;
+		overflow: hidden;
 }
 @media (min-width: 200px){
 	.navbare{
@@ -55,7 +53,7 @@
 	}
 	#cecilecontact{
 		font-size: 9px;
-		margin-left: 50px;
+		margin-left: 0px;
 	}
 	#cecilecontact img{
 		width: 30px;
@@ -85,7 +83,7 @@
 
 	.swiper-slide{
 		padding-left: 225px;
-		padding-top: 0px;
+		padding-top: 0;
 
 	}
 	#welcomescreen{
@@ -93,8 +91,8 @@
 	}
 	}
 	#cecilecontact{
+		margin-left: 30px;
 		font-size: 12px;
-		margin-left: 50px;
 	}
 	#cecilecontact img{
 		width: 150px;
@@ -139,6 +137,9 @@
 	}
 	h1{
 		font-size: 40px;
+	}
+	#contactcontent{
+		margin-left: 30px;
 	}
 }
 .list-group.panel > .list-group-item {
@@ -253,13 +254,12 @@ h4{
 		display: block;
 		text-align: center;
 	}
-	
-	}
-	.test img{
+	#cecilecontact img{
 		float: left;
 	}
-	.test span{
-		text-align: center;
+	#cecilecontact p{
+		font:Arial, Helvetica, sans-serif;
+   		margin-left: 20px;
 	}
 	#gmap {
 	    float: none;
@@ -270,5 +270,17 @@ h4{
     font-weight: bold;
     font-size: 200%;
     padding: 9px;
-    background: #ccc
+    text-align: center;
+
+}
+#formbtn{
+	text-align: center;
+}
+#cecilecontact p{
+	margin-left: 110px;
+	margin-top: 10px;
+}
+#contactcontent{
+	margin-top: 50px;
+	text-align : center;
 }
