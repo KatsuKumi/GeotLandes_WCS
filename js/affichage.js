@@ -1,7 +1,7 @@
 
 /* Ici je supprime la class active à tout les éléments et je l'affiche sur l'élément cliquer*/
-$('.navbar li').click(function(e) {
-	$('.navbar li.active').removeClass('active');
+$('.navbare li').click(function(e) {
+	$('.navbare li.active').removeClass('active');
 	var $this = $(this);
 	if (!$this.hasClass('active')) {
 		$this.addClass('active');
@@ -31,6 +31,12 @@ $(window).resize(function() {
 	console.log(width);
 	swiper = new Swiper('.swiper-container');
 	swiper.update();
+	if (width >= 767){
+		console.log($('.navbare').css("margin-left"));
+		if(parseInt($('.navbare').css("margin-left")) < 0){
+			$('.navbare').css("margin-left", "0px");
+		}
+	}
 	resizepost();
 	recadragecontent();
 
