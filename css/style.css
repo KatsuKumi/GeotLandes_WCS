@@ -25,10 +25,7 @@
 	overflow: hidden;
 }
 #part [class*="col-"] {
-
   text-align: center;
-  box-shadow: 0px 3px 3px #aaa;
-  padding: 0 15px 15px 15px;
 }
 .titrepart {
 	padding-bottom: 10px;
@@ -264,7 +261,6 @@ h4{
 		margin: 20px;
 		min-height: 1400px;
 		text-align: center;
-		width: 1100px;
 	}
 	.item{
 		height: 50%;
@@ -302,12 +298,10 @@ img.iconcon{
     height: auto;
 }
 #cabinet2 {
-	width: 500px;
 	text-align: justify;
 	height: 300px;
 }
 #terrain {
-	width: 500px;
 	text-align: justify;
 	height: 300px;
 }
@@ -320,55 +314,19 @@ img.iconcon{
 	font-weight: bold;
 }
 #service h2 {
-	text-align: center;
 	font-weight: bold;
 }
 #service h3 {
 	text-align: justify;
 	font-weight: bold;
 }
-#oeuvre {
-	width: 500px;
+.servicecadre {
 	height: 350px;
 	margin-top: 50px;
-	overflow-y: scroll;
-	text-align: justify;
-	line-height: 5px;
+	overflow: hidden;
+	text-align: left;
 }
-#oeuvre::-webkit-scrollbar {
-	display: none;
-}
-#amenagement {
-	width: 500px;
-	height: 350px;
-	overflow-y: scroll;
-	text-align: justify;
-	line-height: 5px;
-	margin-top: 50px;
-}
-#amenagement::-webkit-scrollbar {
-	display: none;
-}
-#travaux {
-	width: 500px;
-	height: 350px;
-	overflow: scroll;
-	text-align: justify;
-	line-height: 5px;
-	margin-top: 50px;
-}
-#travaux::-webkit-scrollbar {
-	display: none;
-}
-#foncier {
-	width: 500px;
-	height: 350px;
-	overflow: scroll;
-	text-align: justify;
-	line-height: 5px;
-	margin-top: 50px;
-}
-#foncier::-webkit-scrollbar {
+.servicecadre::-webkit-scrollbar {
 	display: none;
 }
 #service img {
