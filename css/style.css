@@ -23,11 +23,6 @@ body{
 #acceuil{
 	width: 0px;
 }
-#cecilecontact{
-		display: inline-block;
-		border:2px solid grey;
-		overflow: hidden;
-}
 @media (min-width: 200px){
 	.navbare{
 		width: 200px;
@@ -59,7 +54,7 @@ body{
 		width: 30px;
 	}
 	#cecilecontact h3{
-		font-size: 11px;
+		font-size: 13px;
 	}
 	h1{
 		font-size: 20px;
@@ -75,14 +70,15 @@ body{
 		visibility: hidden;
 	}
 	#titrelogo{
-		visibility: hidden;
+		visibility: visible;
 	}
 	#logo{
 		height: 60px;
 	}
 
 	.swiper-slide{
-		padding-left: 225px;
+		padding-left: 225px !important;
+		padding-right: 0 !important;
 		padding-top: 0;
 
 	}
@@ -91,8 +87,7 @@ body{
 	}
 	}
 	#cecilecontact{
-		margin-left: 30px;
-		font-size: 12px;
+		font-size: 15px;
 	}
 	#cecilecontact img{
 		width: 150px;
@@ -130,7 +125,7 @@ body{
 		width: 200px;
 	}
 	#cecilecontact{
-		font-size: 14px;
+		font-size: 16px;
 	}
 	#cecilecontact h3{
 		font-size: 18px;
@@ -156,7 +151,9 @@ body{
 	overflow: hidden;
 }
 .slider{
-	width: 100%; /* you can use % */
+	width: 70%; /* you can use % */
+    margin-right:auto;
+    margin-left:auto;
 	overflow: hidden;
 }
 #burgerbutton{
@@ -201,6 +198,7 @@ h4{
 	-o-transition: filter 0.7s ease-in-out;
 	-ms-transition: filter 0.7s ease-in-out;
 	transition: filter 0.7s ease-in-out;
+	background: white;
 }
 #welcomescreen {
 	display: table;
@@ -254,13 +252,6 @@ h4{
 		display: block;
 		text-align: center;
 	}
-	#cecilecontact img{
-		float: left;
-	}
-	#cecilecontact p{
-		font:Arial, Helvetica, sans-serif;
-   		margin-left: 20px;
-	}
 	#gmap {
 	    float: none;
 	    margin: 0 auto;
@@ -277,10 +268,14 @@ h4{
 	text-align: center;
 }
 #cecilecontact p{
-	margin-left: 110px;
 	margin-top: 10px;
 }
 #contactcontent{
 	margin-top: 50px;
 	text-align : center;
+}
+img.iconcon{
+	margin-top: 20px;
+    width: 30%;
+    height: auto;
 }
