@@ -14,7 +14,7 @@
 
 		<div class="navbarmobile">
 			<img src="img/logo.png" alt="Logo" id="logo">
-			<img src="img/titre_logo.png" alt="Titre Logo">
+			<img src="img/titre_logo.png" alt="Titre Logo" id="titrelogo">
 			<button id="burgerbutton">
 				<div class="icon-bar"></div>
 				<div class="icon-bar"></div>
@@ -26,17 +26,19 @@
 				<img src="img/logo.png" alt="Logo" id="logo" style="margin-top: 15px"><br>
 				<img src="img/titre_logo.png" alt="Titre Logo" id="titrelogo">
 				<ul class="nav nav-pills nav-stacked">
-					<li class="active"><a style="margin-top: 1vw" href="#" id="acceuilbtn" class="btnn"  data-target="acceuil">Accueil</a></li>
-					<li><a href="#services" class="btnn" data-toggle="collapse" id="servicebtn" data-target="service">Services</a></li>	
+					<li class="active"><a style="margin-top: 1vw" href="#" id="acceuilbtn" class="btnn"  data-target="acceuil"><div class="glyphicon glyphicon-home"></div> Accueil</a></li>
+					<li><a href="#services" class="btnn" data-toggle="collapse" id="servicebtn" data-target="service"><div class="glyphicon glyphicon-wrench"></div> Services</a></li>	
 					<div id="services">
-						<a href="javascript:;" class="list-group-item submenu"> > Maitrise d'oeuvre</a>
-						<a href="javascript:;" class="list-group-item submenu"> > Aménagements</a>
-						<a href="javascript:;" class="list-group-item submenu"> > Travaux Spécifiques</a>
-						<a href="javascript:;" class="list-group-item submenu"> > Foncier</a>
+						<a href="javascript:;" class="list-group-item submenu"> <div class="glyphicon glyphicon-menu-right"></div> Maitrise d'oeuvre</a>
+						<a href="javascript:;" class="list-group-item submenu"> <div class="glyphicon glyphicon-menu-right"></div> Aménagements</a>
+						<a href="javascript:;" class="list-group-item submenu"> <div class="glyphicon glyphicon-menu-right"></div> Travaux Spécifiques</a>
+						<a href="javascript:;" class="list-group-item submenu"> <div class="glyphicon glyphicon-menu-right"></div> Foncier</a>
 					</div>
-					<li><a href="#" id="partbtn" class="btnn" data-target="part">Partenaires</a></li>
-					<li><a href="#" id="contactbtn" class="btnn" data-target="contact">Contact</a></li>
+					<li><a href="#" id="partbtn" class="btnn" data-target="part"><div class="glyphicon glyphicon-link"></div> Partenaires</a></li> 
+					<li><a href="#" id="contactbtn" class="btnn" data-target="contact"><div class="glyphicon glyphicon-envelope"></div> Contact</a></li>
 				</ul>
+				<a target="_blank" href="https://www.facebook.com/pages/sarl-Geotlandes/423538047850646" title="Facebook" id="facebookico"><img src="img/facebook.png" onmouseover="this.src='img/facebookfilled.png'"onmouseout="this.src='img/facebook.png'" alt="Facebook" class="iconcon"></a>
+				<a target="_blank" href="https://www.linkedin.com/in/cecile-bibette-5382a6ba/" title="Linkedin" id="linkedin"><img src="img/linkedin.png" onmouseover="this.src='img/linkedinfilled.png'"onmouseout="this.src='img/linkedin.png'" alt="Linkdin" class="iconcon"></a>
 			</div>
 		</nav>
 		<!--Fin de la barre de navigation-->
@@ -56,38 +58,7 @@
 							vous accompagne pour tous vos projets d'aménagement qu'ils soient urbains ou ruraux, vos maitrises d'oeuvres
 
 							ainsi que différents travaux spécifiques comme  l'aménagement agricole et irrigation ou encore le cubage de bois. </span>
-						</div>
-						<div class="row">
-							<div class="slider">
-								<div id="slidergeo" class="carousel slide" data-ride="carousel">
-									<!-- Carousel indicators -->
-									<ol class="carousel-indicators">
-										<li data-target="#slidergeo" data-slide-to="0" class="active"></li>
-										<li data-target="#slidergeo" data-slide-to="1"></li>
-										<li data-target="#slidergeo" data-slide-to="2"></li>
-									</ol>   
-									<!-- Wrapper for carousel items -->
-									<div class="carousel-inner">
-										<div class="item active">
-											<img src="img/1.jpg" alt="First Slide">
-										</div>
-										<div class="item">
-											<img src="img/2.jpg" alt="Second Slide">
-										</div>
-										<div class="item">
-											<img src="img/3.jpg" alt="Third Slide">
-										</div>
-									</div>
-									<!-- Carousel controls -->
-									<a class="carousel-control left" href="#slidergeo" data-slide="prev">
-										<span class="glyphicon glyphicon-chevron-left"></span>
-									</a>
-									<a class="carousel-control right" href="#slidergeo" data-slide="next">
-										<span class="glyphicon glyphicon-chevron-right"></span>
-									</a>
-								</div>
-							</div>
-						</div>
+						</div>			
 					</div>
 					<!--Fin du contenu de l'acceuil-->
 					<!--Debut du contenu de services-->
@@ -199,25 +170,45 @@
 								</div>
 							</div>
 						</div>
-						<div class="test swiper-no-swiping row">
+						<div class="test row">
 							<h1>BIBETTE Cécile DPLG</h1>
-							<div id="contactcontent">
-								<div id="cecilecontact" class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+							<div id="contactcontent" class="col-lg-4 col-lg-offset-1 col-md-12 col-sm-12 col-xs-12 swiper-no-swiping">
+								<div id="cecilecontact">
 									
-									<img src="img/contact.jpg" alt="Cecile">
-									<span class="post-title">Géomètre-expert</span>
-									<p>29 place de l'église<br/>
-										40210 Pissos, Landes<br/><br/>
-										FRANCE<br/><br/>
-										Téléphone<br/><br/>
-										Téléphone<br/><br/>
-										Téléphone<br/><br/>
-										cecile.bibette@orange.fr<br/>
-										<button id="formbtn">Formulaire</button>
-									</p>
+									<span class="post-title"><div class="glyphicon glyphicon-user"></div> Géomètre-expert</span>
+									<div class=""></div>
+									<div class="glyphicon glyphicon-home"></div><br/>
+									29 place de l'église<br/>
+									40210 Pissos, Landes<br/>
+									FRANCE<br/><br/>
+									<div class="glyphicon glyphicon-phone-alt"></div> <br/>05 58 04 73 40<br/><br/>
+									<div class="glyphicon glyphicon-phone"></div> <br/>06 72 45 47 15  <br/><br/>
+									<div class="glyphicon glyphicon-print"></div> <br/>05 58 07 38 85<br/><br/>
+									<div class="glyphicon glyphicon-envelope"></div> <br/>cecile.bibette@orange.fr<br/><br/>
+									<button id="formbtn"><div class="glyphicon glyphicon-pencil"></div> Formulaire</button><br/><br/>
 								</div>
 							</div>
-							<div id="gmap" class="col-lg-5 col-lg-offset-2 col-md-10 col-sm-10 col-xs-12">
+							<div id="gmap" class="col-lg-5 col-lg-offset-2 col-md-10 col-sm-10 col-xs-12 swiper-no-swiping">
+							</div>
+
+							<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											...
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+											<button type="button" class="btn btn-primary">Save changes</button>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
