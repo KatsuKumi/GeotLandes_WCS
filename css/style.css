@@ -317,13 +317,9 @@ img.iconcon{
 	font-weight: bold;
 }
 .servicecadre {
-	height: 280px;
+	min-height: 280px;
 	margin-top: 50px;
-	overflow: hidden;
 	text-align: left;
-}
-.servicecadre::-webkit-scrollbar {
-	display: none;
 }
 #service cadre img {
 	border-radius: 10px;
@@ -344,10 +340,16 @@ img.iconcon{
 	background-color: #335f19;
 	border-color: #335f19;
 }
-#bouton {
-	text-align: center;
-	margin-top: 10px;
+.btn:active{
+	background-color: #14260a;
+	border-color: #14260a;
 }
-.texte {
-	display: none;
+.title{
+	text-align: center;
+}
+.title button{
+	margin-top: 50px;
+}
+.cadre{
+	background : rgba(0, 0, 0, 0.1);
 }
