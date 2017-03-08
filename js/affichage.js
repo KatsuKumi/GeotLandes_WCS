@@ -105,46 +105,50 @@ $('#formbtn').click(function () {
 	$('#myModal').appendTo("body").modal('show');
 	$('html,body').animate({ scrollTop: 0 }, 'slow');
 });
-	var swiper = new Swiper('.swiper-container', {
-		touchRatio: 1,
-		onSlideChangeEnd: function (swiper) {
-			$('.navbar li.active').removeClass('active');
-			//after Event use it for your purpose
-			if (swiper.activeIndex == 0) {
-				$('#acceuilbtn').closest("li").addClass('active');
-			}
-			else if (swiper.activeIndex == 1) {
-				$('#servicebtn').closest("li").addClass('active');
-			}
-			else if (swiper.activeIndex == 2) {
-				$('#partbtn').closest("li").addClass('active');
-			}
-			else {
-				$('#contactbtn').closest("li").addClass('active');
-			}
+
+
+
+
+var swiper = new Swiper('.swiper-container', {
+	touchRatio: 1,
+	onSlideChangeEnd: function (swiper) {
+		$('.navbar li.active').removeClass('active');
+		//after Event use it for your purpose
+		if (swiper.activeIndex == 0) {
+			$('#acceuilbtn').closest("li").addClass('active');
 		}
-	});
-	var map = new GMaps({
-		div: '#gmap',
-		lat: 44.3084329,
-		lng: -0.7774058,
-	});
-	map.addMarker({
-		lat: 44.3084329,
-		lng: -0.7774058,
-		title: 'Géotlandes',
-		infoWindow: {
-			content: '<p>Géotlandes est ici</p>'
+		else if (swiper.activeIndex == 1) {
+			$('#servicebtn').closest("li").addClass('active');
 		}
-	});
+		else if (swiper.activeIndex == 2) {
+			$('#partbtn').closest("li").addClass('active');
+		}
+		else {
+			$('#contactbtn').closest("li").addClass('active');
+		}
+	}
+});
+var map = new GMaps({
+	div: '#gmap',
+	lat: 44.3084329,
+	lng: -0.7774058,
+});
+map.addMarker({
+	lat: 44.3084329,
+	lng: -0.7774058,
+	title: 'Géotlandes',
+	infoWindow: {
+		content: '<p>Géotlandes est ici</p>'
+	}
+});
 $(document).ready(function () {
-	
+
 	if (window.location.search.substr(1) == "contact") {
 		setTimeout(
-		function () {
-			$('html,body').animate({ scrollTop: 0 }, 'slow');
-			swiper.slideTo(3, 1000, true);
-		}, 1000);
+			function () {
+				$('html,body').animate({ scrollTop: 0 }, 'slow');
+				swiper.slideTo(3, 1000, true);
+			}, 1000);
 		$('#myModal').appendTo("body").modal('show');
 	}
 
