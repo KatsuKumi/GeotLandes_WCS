@@ -147,4 +147,5 @@ $(document).ready(function () {
 		}, 1000);
 		$('#myModal').appendTo("body").modal('show');
 	}
+
 });

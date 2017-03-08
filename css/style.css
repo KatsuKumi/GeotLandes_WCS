@@ -299,14 +299,6 @@ img.iconcon{
     width: 30%;
     height: auto;
 }
-#cabinet2 {
-	text-align: justify;
-	height: 300px;
-}
-#terrain {
-	text-align: justify;
-	height: 300px;
-}
 #service h1 {
 	text-align: center;
 	font-weight: bold;
@@ -317,13 +309,15 @@ img.iconcon{
 }
 #service h2 {
 	font-weight: bold;
+	text-align: center;
+	margin-top: 0;
 }
 #service h3 {
 	text-align: justify;
 	font-weight: bold;
 }
 .servicecadre {
-	height: 350px;
+	height: 280px;
 	margin-top: 50px;
 	overflow: hidden;
 	text-align: left;
@@ -349,4 +343,11 @@ img.iconcon{
 
 	background-color: #335f19;
 	border-color: #335f19;
+}
+#bouton {
+	text-align: center;
+	margin-top: 10px;
+}
+.texte {
+	display: none;
 }
