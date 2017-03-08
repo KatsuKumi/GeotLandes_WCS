@@ -11,6 +11,22 @@
 	box-shadow: 2px 2px 5px;
 	text-align: center;	
 }
+#footer{
+	width: 100%;
+	height: 20px;
+	position: fixed;
+	bottom: 0;
+	background-color: white; 
+	box-shadow: 2px 2px 5px;
+	overflow-x: hidden; /* Disable horizontal scroll */
+}
+#rightfooter{
+	position: absolute;
+	right:0;
+	bottom: 0;
+	margin-right: 50px;
+
+}
 .content{
 	overflow: hidden;
 }
@@ -41,7 +57,6 @@
 }
 .row {
 	margin: auto;
-	margin-top: 50px;
 }
 @media (min-width: 200px){
 	.navbare{
@@ -67,17 +82,10 @@
 		font-size: 12px;
 	}
 	#cecilecontact{
-		font-size: 9px;
 		margin-left: 0px;
 	}
 	#cecilecontact img{
 		width: 30px;
-	}
-	#cecilecontact h3{
-		font-size: 13px;
-	}
-	h1{
-		font-size: 20px;
 	}
 }
 @media (min-width: 767px){
@@ -104,7 +112,6 @@
 	}
 	#welcomescreen{
 		font-size: 14px;
-	}
 	}
 	#cecilecontact{
 		font-size: 15px;
@@ -138,9 +145,6 @@
 	#welcomescreen{
 		font-size: 18px;
 	}
-	.test{
-
-	}
 	#cecilecontact img{
 		width: 200px;
 	}
@@ -171,7 +175,6 @@
 	overflow: hidden;
 }
 .slider{
-	width: 70%; /* you can use % */
     margin-right:auto;
     margin-left:auto;
 	overflow: hidden;
@@ -187,7 +190,7 @@
 	width: 100%;
 	height: 40px;
 	position: fixed; /* Stay in place */
-	z-index:1000; /* Stay on top */
+	z-index:1000; /* Stay on top */u
 	top: 0;
 	left: 0;
 	background-color: #E3E3E3;
@@ -259,7 +262,6 @@ h4{
 	}
 	.cadre{
 		margin: 20px;
-		min-height: 1400px;
 		text-align: center;
 	}
 	.item{
@@ -329,8 +331,22 @@ img.iconcon{
 .servicecadre::-webkit-scrollbar {
 	display: none;
 }
-#service img {
+#service cadre img {
 	border-radius: 10px;
 	margin-top: 30px;
 	margin-bottom: 30px;
+}
+.modal {
+   position: absolute;
+   overflow: auto;
+   overflow-y: auto;
+}
+.btn{
+	background-color: #67bf32;
+	border-color: #67bf32;
+}
+.btn:hover{
+
+	background-color: #335f19;
+	border-color: #335f19;
 }
