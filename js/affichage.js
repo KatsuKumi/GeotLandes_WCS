@@ -74,7 +74,7 @@ function recadragecontent() {
 }
 
 function getmultiplier(id) {
-	if (id == "service" || id == "servicebtn") {
+	if (id == "service" || id == "servicebtn" || id == "maitriseoeuvrebtn" || id == "amenagment" || id == "travauxspecbtn" || id == "foncierbtn") {
 		return 1;
 	}
 	else if (id == "part" || id == "partbtn") {
@@ -91,7 +91,7 @@ $('.navbar a').click(function () {
 	var multiplier = getmultiplier(id);
 	var width = getWindowWidth();
 	var navbar = $('.navbare').width();
-	$('html,body').animate({ scrollTop: 0 }, 'slow');
+	$('html,body').animate({ scrollTop: 0 }, 100);
 	swiper.slideTo(multiplier, 1000, true);
 });
 $('.content').click(function () {

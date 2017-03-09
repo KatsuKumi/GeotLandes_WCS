@@ -262,7 +262,6 @@ h4{
 	}
 	.cadre{
 		margin: 20px;
-		text-align: center;
 	}
 	.item{
 		height: 50%;
@@ -319,7 +318,6 @@ img.iconcon{
 .servicecadre {
 	min-height: 280px;
 	margin-top: 50px;
-	text-align: left;
 }
 #service cadre img {
 	border-radius: 10px;
@@ -337,12 +335,20 @@ img.iconcon{
 }
 .btn:hover{
 
-	background-color: #335f19;
-	border-color: #335f19;
+	background-color: #67bf32;
+	border-color: #67bf32;
 }
 .btn:active{
 	background-color: #14260a;
 	border-color: #14260a;
+}
+.btn:active:hover{
+	background-color: #67bf32;
+	border-color: #67bf32;
+}
+.btn:focus{
+	background-color: #67bf32;
+	border-color: #67bf32;
 }
 .title{
 	text-align: center;
@@ -350,6 +356,8 @@ img.iconcon{
 .title button{
 	margin-top: 50px;
 }
+.texte{
+	text-align: left;
+}
 .cadre{
-	background : rgba(0, 0, 0, 0.1);
 }
