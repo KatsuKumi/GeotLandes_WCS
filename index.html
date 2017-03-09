@@ -25,7 +25,7 @@
 		</div>
 		<nav class="navbare" role="navigation">
 			<div class="navbar">
-				<a id="acceuilbtn" data-target="acceuil">
+				<a id="logobtn" data-target="acceuil">
 					<img src="img/logo.png" alt="Logo" id="logo" style="margin-top: 15px"><br>
 					<img src="img/titre_logo.png" alt="Titre Logo" id="titrelogo">
 				</a>
@@ -39,13 +39,13 @@
 							<div class="glyphicon glyphicon-wrench"></div> Services</a>
 					</li>
 					<div id="services">
-						<a href="javascript:;" class="list-group-item submenu">
+						<a href="javascript:;" class="list-group-item submenu" data-target="maitriseoeuvrebtn">
 							<div class="glyphicon glyphicon-menu-right"></div> Maitrise d'oeuvre</a>
-						<a href="javascript:;" class="list-group-item submenu">
+						<a href="javascript:;" class="list-group-item submenu" data-target="amenagment">
 							<div class="glyphicon glyphicon-menu-right"></div> Aménagements</a>
-						<a href="javascript:;" class="list-group-item submenu">
+						<a href="javascript:;" class="list-group-item submenu" data-target="travauxspecbtn">
 							<div class="glyphicon glyphicon-menu-right"></div> Travaux Spécifiques</a>
-						<a href="javascript:;" class="list-group-item submenu">
+						<a href="javascript:;" class="list-group-item submenu" data-target="foncierbtn">
 							<div class="glyphicon glyphicon-menu-right"></div> Foncier</a>
 					</div>
 					<li>
@@ -119,7 +119,7 @@
 					<div class="cadre row">
 						<h1>SERVICES<br></h1>
 						<div class="row">
-							<div id="cabinet2" class="col-lg-offset-1 col-lg-3 col-xs-12 servicecadre ">
+							<div id="cabinet2" class="col-md-offset-1 col-md-3 col-xs-12 servicecadre ">
 								<div class="title">
 								<h2>DANS NOTRE CABINET</h2>
 								<center><img src="img/cabinet.jpg"></center>
@@ -127,7 +127,7 @@
 								<div id="texte1" class="collapse"><h5>-Demandes administratives concernant toute cession de terrain (CU,DP et PA)<br> -Demande préalable de défrichement.<br>-Document modificatif du parcellaire cadastral.<br> -Projet d'étude (VRD, agricole, partage successoral).<br> -Élaboration
 									de divers plans après relevés topographiques.<br> -Règlement de copropriété sur le terrain.</h5></div>
 							</div>
-							<div id="terrain" class="col-lg-offset-1 col-lg-3 col-xs-12 servicecadre ">
+							<div id="terrain" class="col-md-offset-1 col-md-3 col-xs-12 servicecadre ">
 								<div class="title"><h2>SUR VOTRE TERRAIN</h2><center><img src="img/terrain.jpg"></center>
 								<button class="show-element btn btn-primary swiper-no-swiping" data-toggle="collapse" data-target="#texte2">En savoir plus...</button></div>
 								<div id="texte2" class="collapse"><h5>Pour chacunes de nos activités, nous faisons au départ un relevé topographique à l'aide d'instruments puis nous établissons
@@ -147,6 +147,8 @@
 									et détaillé<br> -Le projet d’exécution.<br> -La rédaction du dossier de consultation pour les entreprises.<br> -L’assistance
 									Maître d’ouvrage pour les marchés de travaux.<br> -le contrôle général des w à travers des réunions hebdomadaires.<br>									-La réception et le décompte des travaux.<br> -L’élaboration du dossier des ouvrages exécutés.</h5></div>
 							</div>
+							</div>
+						<div class="row">
 							<div id="amenagement" class="col-lg-offset-1 col-lg-3 col-xs-12 servicecadre ">
 								<div class="title"><h2>AMÉNAGEMENT</h2><center><img src="img/amenagement.jpg"></center>
 									<button class="show-element btn btn-primary swiper-no-swiping" data-toggle="collapse" data-target="#texte4">En savoir plus...</button>
@@ -208,13 +210,13 @@
 									<strong>COPROPRIÉTÉ</strong><br> Vous souhaitez vendre votre immeuble à plusieurs personnes. Une division en plusieurs
 									lots est alors nécessaire, ainsi qu'en règlement de copropriété pour des besoins du notaire. Nous nous chargeons
 									de cela et sommes à votre disposition pour tout renseignement.</h5></div>
-							</div>
+									</div>
 						</div>
 					</div>
 				</div>
 				<!--Fin du contenu de services-->
 				<!--Debut du contenu de partenaires-->
-				<div id="part" class="post swiper-slide container">
+				<div id="part" class="post swiper-slide container cadre">
 					<div class="row">
 						<div class="slider">
 							<div id="slidergeo" class="carousel slide" data-ride="carousel">
