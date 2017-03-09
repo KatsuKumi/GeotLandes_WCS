@@ -85,14 +85,40 @@ function getmultiplier(id) {
 	}
 	return 0;
 };
-/* Ici (x4) je slide de gauche à droite suivant quel bouton est appuyer ( En réalité je pourrais faire ça plus court, mais c'est plus lisible comme ça*/
+
 $('.navbar a').click(function () {
 	var id = $(this).data("target");
 	var multiplier = getmultiplier(id);
 	var width = getWindowWidth();
 	var navbar = $('.navbare').width();
-	$('html,body').animate({ scrollTop: 0 }, 100);
 	swiper.slideTo(multiplier, 1000, true);
+	if (id == "maitriseoeuvrebtn") {
+		$('html, body').animate({
+			scrollTop: $("#oeuvre").offset().top
+		}, 500);
+		$('#texte3').collapse();
+	}
+	else if (id == "amenagment") {
+		$('html, body').animate({
+			scrollTop: $("#amenagement").offset().top
+		}, 500);
+		$('#texte4').collapse();
+	}
+	else if (id == "travauxspecbtn") {
+		$('html, body').animate({
+			scrollTop: $("#amenagement").offset().top
+		}, 500);
+		$('#texte5').collapse();
+	}
+	else if (id == "foncierbtn") {
+		$('html, body').animate({
+			scrollTop: $("#foncier").offset().top
+		}, 500);
+		$('#texte6').collapse();
+	}
+	else {
+		$('html,body').animate({ scrollTop: 0 }, 100);
+	}
 });
 $('.content').click(function () {
 	var navbar = $('.navbare').width();
