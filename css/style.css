@@ -1,12 +1,367 @@
-.navbar {
-    height: 100%; /* 100% Full-height */
-    width: 250px; 
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0;
-    left: 0;
-    background-color: #E3E3E3; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    box-shadow: 2px 2px 5px;
+.navbare {
+	height: 100%; /* 100% Full-height */
+	width: 250px; 
+	margin-left: 0px;
+	position: fixed; /* Stay in place */
+	z-index:1000; /* Stay on top */
+	top: 0;
+	left: 0;
+	background-color: white; 
+	overflow-x: hidden; /* Disable horizontal scroll */
+	box-shadow: 2px 2px 5px;
+	text-align: center;	
+}
+#footer{
+	width: 100%;
+	height: 20px;
+	position: fixed;
+	bottom: 0;
+	background-color: white; 
+	box-shadow: 2px 2px 5px;
+	overflow-x: hidden; /* Disable horizontal scroll */
+}
+#rightfooter{
+	position: absolute;
+	right:0;
+	bottom: 0;
+	margin-right: 50px;
+
+}
+.content{
+	overflow: hidden;
+}
+
+.thumbnail{
+	margin-top: 60px;
+}
+#acceuil{
+	width: 0px;
+}
+#cecilecontact{
+	overflow: hidden;
+    background: white;
+    border-radius: 1em;
+    padding: 1em;
+    box-shadow: 0 3px 0 #d7e4ed;
+}
+#part [class*="col-"] {
+  text-align: center;
+}
+.titrepart {
+	padding-bottom: 10px;
+	display: block;
+	font-size: 17px;
+	font-weight: bold;
+}
+
+.container {
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: 0;
+}
+.row {
+	margin: auto;
+}
+@media (min-width: 200px){
+	.navbare{
+		width: 200px;
+		margin-left: -230px;
+		visibility: visible;
+	}
+	.navbarmobile{
+		visibility: visible;
+	}
+	#titrelogo{
+		visibility: hidden;
+	}
+	#logo{
+		height: 35px;
+	}
+
+	.swiper-slide{
+		padding-top: 40px;
+
+	}
+	#welcomescreen{
+		font-size: 12px;
+	}
+	#cecilecontact{
+		margin-left: 0px;
+	}
+	#cecilecontact img{
+		width: 30px;
+	}
+}
+@media (min-width: 767px){
+	.navbare{
+		width: 225px;
+		margin-left: 0px;
+		visibility: visible;
+	}
+	.navbarmobile{
+		visibility: hidden;
+	}
+	#titrelogo{
+		visibility: visible;
+	}
+	#logo{
+		height: 60px;
+	}
+
+	.swiper-slide{
+		padding-left: 225px !important;
+		padding-right: 0 !important;
+		padding-top: 0;
+
+	}
+	#welcomescreen{
+		font-size: 14px;
+	}
+	#cecilecontact{
+		font-size: 15px;
+	}
+	#cecilecontact img{
+		width: 150px;
+	}
+	#cecilecontact h3{
+		font-size: 15px;
+	}
+	h1{
+		font-size: 30px;
+	}
+}
+@media screen and (min-width: 1199px){
+	.navbare{
+		width: 250px;
+		margin-left: 0px;
+		visibility: visible;
+	}
+	.navbarmobile{
+		visibility: hidden;
+	}
+	#titrelogo{
+		visibility: visible;
+	}
+	.swiper-slide{
+		padding-left: 250px;
+		padding-top: 0px;
+	}
+	#welcomescreen{
+		font-size: 18px;
+	}
+	#cecilecontact img{
+		width: 200px;
+	}
+	#cecilecontact{
+		font-size: 16px;
+	}
+	#cecilecontact h3{
+		font-size: 18px;
+	}
+	h1{
+		font-size: 40px;
+	}
+	#contactcontent{
+		margin-left: 30px;
+	}
+}
+.list-group.panel > .list-group-item {
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px
+}
+.list-group-submenu {
+	margin-left:20px;
+}
+.slider img{
+	width: 100%; /* you can use % */
+	text-align: center;
+	vertical-align: middle;
+	overflow: hidden;
+}
+.slider{
+    margin-right:auto;
+    margin-left:auto;
+	overflow: hidden;
+}
+#burgerbutton{
+	border: none;
+	background: none;
+	top: 0px;
+	left: 0px;
+	float: right;
+}
+.navbarmobile{
+	width: 100%;
+	height: 40px;
+	position: fixed; /* Stay in place */
+	z-index:1000; /* Stay on top */u
+	top: 0;
+	left: 0;
+	background-color: #E3E3E3;
+	box-shadow: 2px 2px 5px;
+}
+.navbarmobile img{
+	margin: 2px;
+}
+
+.burgermenu{
+	float:right;
+}
+
+.icon-bar{
+	display: block;
+	border: solid black;
+	width: 35px;
+	height: 1px;
+	margin: 6px 0;
+}
+h4{
+
+	line-height: 30px; 	
+}
+.content{
+	-webkit-transition: filter 0.7s ease-in-out;
+	-moz-transition: filter 0.7s ease-in-out;
+	-o-transition: filter 0.7s ease-in-out;
+	-ms-transition: filter 0.7s ease-in-out;
+	transition: filter 0.7s ease-in-out;
+	background: white;
+}
+#welcomescreen {
+	display: table;
+	width: 100%;
+	padding-top: 150px;
+	padding-bottom: 300px;
+	padding-left: 50px;
+	padding-right: 50px;
+	text-align: center;
+	color: white;
+	background: url(../img/bg.JPG) no-repeat center scroll;
+	background-color: #E3E3E3;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+#logowelcome{
+	width: 100px;
+	height: auto;
+}
+.navbare li{
+	text-align: left;
+	padding-left: 10px;
+}
+.submenu{
+	text-align: left;
+	padding-left: 50px;
+}
+.btnn{
+	color:#5d3f05;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
+	background-color: #67bf32;	
+	}/*#5d3f05*/
+	li a:hover{
+		color:#8a6d3b;
+	}
+	.item{
+		height: 50%;
+	}
+	#contact h1{
+		display: block;
+		text-align: center;
+	}
+	#gmap {
+	    float: none;
+	    margin: 0 auto;
+		margin-top: 50px;
+		height: 600px;
+	}
+.post-title {
+    font-weight: bold;
+    font-size: 200%;
+    padding: 9px;
     text-align: center;
+
+}
+#formbtn{
+	text-align: center;
+}
+#cecilecontact p{
+	margin-top: 10px;
+}
+#contactcontent{
+	margin-top: 50px;
+	text-align : center;
+}
+img.iconcon{
+	margin-top: 20px;
+    width: 30%;
+    height: auto;
+}
+#service h1 {
+	text-align: center;
+	font-weight: bold;
+}
+#part h1 {
+	text-align: center;
+	font-weight: bold;
+}
+#service h2 {
+	font-weight: bold;
+	text-align: center;
+	margin-top: 0;
+}
+#service h3 {
+	text-align: justify;
+	font-weight: bold;
+}
+.servicecadre {
+	min-height: 280px;
+	margin-top: 50px;
+}
+#service cadre img {
+	border-radius: 10px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.modal {
+   position: absolute;
+   overflow: auto;
+   overflow-y: auto;
+}
+.btn{
+	background-color: #67bf32;
+	border-color: #67bf32;
+}
+.btn:hover{
+
+	background-color: #67bf32;
+	border-color: #67bf32;
+}
+.btn:active{
+	background-color: #14260a;
+	border-color: #14260a;
+}
+.btn:active:hover{
+	background-color: #67bf32;
+	border-color: #67bf32;
+}
+.btn:focus{
+	background-color: #67bf32;
+	border-color: #67bf32;
+}
+.title{
+	text-align: center;
+}
+.title button{
+	margin-top: 50px;
+}
+.texte{
+	text-align: left;
+}
+.cadre{
+}
+.content{
+	background-color: #e9f0f5;
 }

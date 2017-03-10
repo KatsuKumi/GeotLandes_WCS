@@ -1,17 +1,443 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>GéotLandes - Géomètre expert</title>
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-	</head>
+
+<head>
+	<meta charset="utf-8">
+	<title>GéotLandes - Géomètre expert</title>
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<meta name="viewport" content="minimum-scale=1, maximum-scale=1, width=device-width" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/swiper.css">
+	<link rel="stylesheet" href="css/stylesheet.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+
 	<body>
-		<div class="navbar">
-		<img src="img/logo.png" alt="Logo">
-		<p style="font-size: 10px">Cabinet Géomètre expert à Pissos</p>
+		<!--Debut de la barre de navigation-->
+
+		<div class="navbarmobile">
+			<img src="img/logo.png" alt="Logo" id="logo">
+			<img src="img/titre_logo.png" alt="Titre Logo" id="titrelogo">
+			<button id="burgerbutton">
+				<div class="icon-bar"></div>
+				<div class="icon-bar"></div>
+				<div class="icon-bar"></div>
+			</button>
+		</div>
+		<nav class="navbare" role="navigation">
+			<div class="navbar">
+				<a id="logobtn" data-target="acceuil">
+					<img src="img/logo.png" alt="Logo" id="logo" style="margin-top: 15px"><br>
+					<img src="img/titre_logo.png" alt="Titre Logo" id="titrelogo">
+				</a>
+				<ul class="nav nav-pills nav-stacked">
+					<li class="active">
+						<a style="margin-top: 1vw" href="#" id="acceuilbtn" class="btnn" data-target="acceuil">
+							<div class="glyphicon glyphicon-home"></div> Accueil</a>
+					</li>
+					<li>
+						<a href="#services" class="btnn" data-toggle="collapse" id="servicebtn" data-target="service">
+							<div class="glyphicon glyphicon-wrench"></div> Services</a>
+					</li>
+					<div id="services">
+						<a href="javascript:;" class="list-group-item submenu" data-target="maitriseoeuvrebtn">
+							<div class="glyphicon glyphicon-menu-right"></div> Maitrise d'oeuvre</a>
+						<a href="javascript:;" class="list-group-item submenu" data-target="amenagment">
+							<div class="glyphicon glyphicon-menu-right"></div> Aménagements</a>
+						<a href="javascript:;" class="list-group-item submenu" data-target="travauxspecbtn">
+							<div class="glyphicon glyphicon-menu-right"></div> Travaux Spécifiques</a>
+						<a href="javascript:;" class="list-group-item submenu" data-target="foncierbtn">
+							<div class="glyphicon glyphicon-menu-right"></div> Foncier</a>
+					</div>
+					<li>
+						<a href="#" id="partbtn" class="btnn" data-target="part">
+							<div class="glyphicon glyphicon-link"></div> Partenaires</a>
+					</li>
+					<li>
+						<a href="?contact" id="contactbtn" class="btnn" data-target="contact">
+							<div class="glyphicon glyphicon-envelope"></div> Contact</a>
+					</li>
+				</ul>
+				<a target="_blank" href="https://www.facebook.com/pages/sarl-Geotlandes/423538047850646" title="Facebook" id="facebookico"><img src="img/facebook.png" onmouseover="this.src='img/facebookfilled.png'" onmouseout="this.src='img/facebook.png'"
+					 alt="Facebook" class="iconcon"></a>
+				<a target="_blank" href="https://www.linkedin.com/in/cecile-bibette-5382a6ba/" title="Linkedin" id="linkedin"><img src="img/linkedin.png" onmouseover="this.src='img/linkedinfilled.png'" onmouseout="this.src='img/linkedin.png'"
+					 alt="Linkdin" class="iconcon"></a>
+			</div>
+		</nav>
+		<!--Fin de la barre de navigation-->
+		<!--Debut du contenu du site-->
+		<div class="content swiper-container">
+			<div class="swiper-wrapper">
+				<!--Debut du contenu de l'acceuil-->
+				<div id="acceuil" class="post actif swiper-slide container">
+					<div id="welcomescreen">
+
+						<img src="img/logo.png" alt="Logo" id="logowelcome" style="margin-bottom: 15px"><br>
+						<h1>Bienvenue !</h1>
+						<span>Bienvenue sur le site de Géotlandes. Après 30 ans d'expérience sur le secteur de la haute Landes, Cécile Bibette 
+
+							ainsi que Benôit Labat ont crée la SARL GEOTLANDES à Pissos en début d'année 2012.  Depuis, Geotlandes
+
+							vous accompagne pour tous vos projets d'aménagement qu'ils soient urbains ou ruraux, vos maitrises d'oeuvres
+
+							ainsi que différents travaux spécifiques comme  l'aménagement agricole et irrigation ou encore le cubage de bois. </span>
+					</div>
+				</div>
+				<!--Fin du contenu de l'acceuil-->
+				<!--Debut du contenu de services-->
+				<div id="service" class="post swiper-slide container">
+					<div class="row">
+						<div class="slider">
+							<div id="slidergeo" class="carousel slide" data-ride="carousel">
+								<!-- Carousel indicators -->
+								<ol class="carousel-indicators swiper-no-swiping">
+									<li data-target="#slidergeo" data-slide-to="0" class="active"></li>
+									<li data-target="#slidergeo" data-slide-to="1"></li>
+									<li data-target="#slidergeo" data-slide-to="2"></li>
+								</ol>
+								<!-- Wrapper for carousel items -->
+								<div class="carousel-inner">
+									<div class="item active">
+										<img src="img/1.jpg" alt="First Slide" id="imgslide1">
+									</div>
+									<div class="item">
+										<img src="img/2.jpg" alt="Second Slide" id="imgslide2">
+									</div>
+									<div class="item">
+										<img src="img/3.jpg" alt="Third Slide" id="imgslide3">
+									</div>
+								</div>
+								<!-- Carousel controls -->
+								<a class="carousel-control left swiper-no-swiping" href="#slidergeo" data-slide="prev">
+									<span class="glyphicon glyphicon-chevron-left"></span>
+								</a>
+								<a class="carousel-control right swiper-no-swiping" href="#slidergeo" data-slide="next">
+									<span class="glyphicon glyphicon-chevron-right"></span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<section id="cd-timeline" class="cd-container">
+						<div class="cd-timeline-block">
+
+							<div class="cd-timeline-content first" id="oeuvre">
+								<h2>DANS NOTRE CABINET</h2>
+								<h5>- Demandes administratives concernant toute cession  de terrain (CU,DP et PA).<br>
+									- Demande préalable de défrichement.<br>
+									- Document modificatif du parcellaire cadastral.<br>
+									- Projet d'étude (VRD, agricole, partage successoral).<br>
+									- Élaboration  de divers plans après relevés topographiques.<br>
+									- Règlement de copropriété sur le terrain.</h5>
+							</div> <!-- cd-timeline-content -->
+						</div> <!-- cd-timeline-block -->
+
+						<div class="cd-timeline-block">
+
+							<div class="cd-timeline-content first" id="oeuvre">
+								<h2>SUR LE TERRAIN</h2>
+								<strong class="subtitle">Plan topographique: la base du métier de Géomètre.</strong><br>
+									Pour chacunes de nos activités, nous faisons au départ un relevé topographique à l'aide d'instruments puis nous établissons un plan relatant l'état des lieux ainsi mesuré.<br>
+									<strong class="subtitle">Il est indispensable : pour tout projet de construction, d'aménagement ainsi qu'avant toute étude de faire :</strong><br>
+									- Division parcellaire.<br>
+									- Délimitation, bornage.<br>
+									- Implantation de bâtiments.<br>
+									<strong class="subtitle">Après obtention du permis de construire, nous implantons votre ou vos bâtiments conformément au permis avec garantie du respect des règles de prospect. Nous implantons aussi tout type d'ouvrage.</strong><br>
+									- Relevé d'intérieur.<br>
+									- Relevé agricole.</h5>
+							</div> <!-- cd-timeline-content -->
+						</div> <!-- cd-timeline-block -->
+
+						<div class="cd-timeline-block">
+							<div class="cd-timeline-img cd-maitrise">
+								<!--<img src="" alt="Picture">-->
+							</div> <!-- cd-timeline-img -->
+
+							<div class="cd-timeline-content" id="oeuvre">
+								<h2>MAÎTRISE D'OEUVRE</h2>
+								<h5>Pour chacunes de nos activités, nous faisons au départ un relevé topographique à l'aide d'instruments puis nous établissons un plan relatant l'état des lieux ainsi mesuré.<br> 
+								Il est indispensable pour tout projet de construction, d'aménagement ainsi qu'avant toute étude de faire :<br> 
+								- Une division parcellaire, une délimitation, bornage, implantation de bâtiments.<br> 
+								Après obtention du permis de constswiper-no-swipingruire, nous implantons votre ou vos bâtiments conformément au permis avec
+								garantie du respect des règles de prospect. Nous implantons aussi tout type d'ouvrage.<br> 
+								- Un relevé d'intérieur, un relevé agricole.</h5>
+								<span class="cd-date">MAÎTRISE D'OEUVRE</span>
+							</div> <!-- cd-timeline-content -->
+						</div> <!-- cd-timeline-block -->
+
+						<div class="cd-timeline-block">
+							<div class="cd-timeline-img cd-amenagement">
+								<!--<img src="http://codyhouse.co/demo/vertical-timeline/img/cd-icon-movie.svg" alt="Movie">-->
+							</div> <!-- cd-timeline-img -->
+
+							<div class="cd-timeline-content" id="amenagement">
+								<h2>AMÉNAGEMENT</h2>
+								<h5><strong class="subtitle">AMÉNAGEMENT URBAIN</strong> :<br> 
+										Dans le domaine d’aménagement urbain, notre cabinet propose une prestation complète de l’étude de faisabilité jusqu’à l’obtention des autorisations d’aménagements. Nous vous proposons un 	projet qui exploitera et tirera au mieux parti de votre terrain en fonction des règles d’urbanisme. <br>
+									<strong class="subtitle">NOTRE MISSION COMPREND</strong> :<br> 
+										- L’étude de faisabilité : proposition d’aménagement et estimation des coûts.<br> 
+										- L’étude approfondie du projet.<br> -Le montage du PA.<br> 
+										- Le suivi du dossier dans son instruction. La suite étant éventuellement la maitrise d’œuvre que l’on vous invite à aller consulter. <br>
+									<strong class="subtitle">AMÉNAGEMENT RURAL</strong> : <br>
+										Notre cabinet réalise des Aménagements Fonciers Agricoles et Forestiers dans dessecteurs agricoles, viticoles et forestiers dans le but de réorganiser des propriétéséparses pour une culture efficace.
+								</h5>
+								<span class="cd-date">AMÉNAGEMENT</span>
+							</div> <!-- cd-timeline-content -->
+						</div> <!-- cd-timeline-block -->
+
+						<div class="cd-timeline-block">
+							<div class="cd-timeline-img cd-travaux">
+								<!--<img src="http://codyhouse.co/demo/vertical-timeline/img/cd-icon-picture.svg" alt="Picture">-->
+							</div> <!-- cd-timeline-img -->
+
+							<div class="cd-timeline-content" id="travauxspec">
+								<h2>TRAVAUX SPÉCIFIQUES</h2>
+								<h5><strong class="subtitle">RELEVÉS DE SURFACES AGRICOLES</strong> :<br> 
+										Plan de votre exploitation avec le calcul des surfaces utiles. Calcul des surfaces non exploitées (chemin, base, ferme) et calcul des jachères. Nos plans sont compatibles à tous logiciel de gestion d’espaces agricoles.<br>
+									<strong class="subtitle">PROJET D’AMÉNAGEMENT AGRICOLE</strong> :<br> 
+										Vous voulez apporter des modifications, des restructurations ou même monter un dossier pour défrichement, nous montons les projets, nous occupons des mises en place et du montons les projets, nous occupons des mises en places et du foncier.<br>
+									<strong class="subtitle">PROJET D’IRRIGATION</strong> :<br> 
+										Nous étudions vos projets d’irrigation pour optimiser au mieux les surfaces non irriguées ou réaménager un ensemble agricole.<br>
+									<strong class="subtitle">IMPLANTATION DE PIVOT D’ARROSAGE</strong> :<br> 
+										Nous implantons vos pivots et éventuellement les points correspondant aux passages des roues sur vos fossés.<br>
+									<strong class="subtitle">CUBAGE DE BOIS ET ESTIMATION DE PARCELLE FORESTIÈRE</strong> :<br> 
+										DFCI :<br> 
+										Vous voulez aménager une zone, (accès franchissements, curage ou création de fossés), nous pouvons vous aider dans le montage du dossier. Vous voulez mettre à jour la cartographie de votre ASA (piste, fossés, point d’eau, aire de stockage).
+								</h5>
+								<span class="cd-date">TRAVAUX SPÉCIFIQUES</span>
+							</div> <!-- cd-timeline-content -->
+						</div> <!-- cd-timeline-block -->
+
+						<div class="cd-timeline-block">
+							<div class="cd-timeline-img cd-foncier">
+								<!--<img src="http://codyhouse.co/demo/vertical-timeline/img/cd-icon-location.svg" alt="Location">-->
+							</div> <!-- cd-timeline-img -->
+
+							<div class="cd-timeline-content" id="foncier">
+								<h2>FONCIER</h2>
+								<h5><strong class="subtitle">BORNAGE ET RECONNAISSANCE DE LIMITES</strong><br> 
+										Le Bornage et la reconnaissance de limite est une de nos
+										activités la plus courante et connue. Dans quel cas le bornage est-il indispensable, voire obligatoire ?<br> - si
+										vous désirez savoir où sont vos limites<br> 
+										- si vous désirez connaître la superficie réelle de votre terrain<br>		
+										- avant toute édification de clôture, construction de bâtiment soumise à des règles de prospection.<br> 
+										- si vous créer un terrain à bâtir<br> Sachez que le cadastre n'est élaboré que dans un objectif fiscal. Il s'avère imprécis et doit être considéré comme un élément de présomption. Par conséquent, seules les limites issues d'un bornage amiable ont une valeur juridique.<br>
+									<strong class="subtitle">SERVITUDES</strong><br> 
+										La division d'un terrain implique parfois une création de servitude. Nous établissons le plan qui permettra de localiser et définir l'assiette de la servitude. Ce plan sera alors annexé à l'acte établi par le notaire.<br>
+									<strong class="subtitle">DIVISION DE PARCELLE</strong><br> 
+										- Document d'arpentage (DA) ? - Déclaration préalable (DP) ? - Permis d'aménager (PA) ?<br> 
+										Laquelle de ces trois procédures faut-il entreprendre ? Que vous soyez particulier ou professionnel,
+										nous avons les solutions pour concrétiser votre souhait et définirons ensemble la mission à accomplir pour identifier
+										correctement le but à atteindre. Le choix de procédure pour effectuer une division parcellaire dépend de plusieurs
+										paramètres dont:<br> 
+										- le nombre de lots à créer<br> 
+										- la destination des lots<br> 
+										- l'accès aux lots<br> 
+										- la présence ou non d'un périmètre de protection<br> 
+										Chaque terrain étant unique, à petite ou grande échelle, nous sommes à votre disposition pour tout conseil.<br>
+									<strong class="subtitle">CERTIFICAT D'URBANISME</strong><br> 
+										C'est un acte administratif qui indique les règles d'urbanisme, les
+										limitations administratives au droit de propriété et le régime des taxes et participations d'urbanisme applicable
+										à un terrain donné ainsi que l'état des équipe applicable à un terrain donné ainsi que l'état des équipements publics
+										éxistants ou prévus. Avant d'acquérir un terrain à bâtir, il est indispensable de demander un CU, que le notaire
+										demandera pour l'acte.<br>
+									<strong class="subtitle">COPROPRIÉTÉ</strong><br> 
+										Vous souhaitez vendre votre immeuble à plusieurs personnes. Une division en plusieurs
+										lots est alors nécessaire, ainsi qu'en règlement de copropriété pour des besoins du notaire. Nous nous chargeons
+										de cela et sommes à votre disposition pour tout renseignement.</h5>
+								<span class="cd-date">FONCIER</span>
+							</div> <!-- cd-timeline-content -->
+						</div> <!-- cd-timeline-block -->
+					</section> <!-- cd-timeline -->
+				</div>
+				<!--Debut du contenu de partenaires-->
+				<div id="part" class="post swiper-slide container cadre">
+					<div class="row">
+						<div class="slider">
+							<div id="slidergeopart" class="carousel slide " data-ride="carousel">
+								<!-- Carousel indicators -->
+								<ol class="carousel-indicators swiper-no-swiping">
+									<li data-target="#slidergeopart" data-slide-to="0" class="active"></li>
+									<li data-target="#slidergeopart" data-slide-to="1"></li>
+									<li data-target="#slidergeopart" data-slide-to="2"></li>
+								</ol>
+								<!-- Wrapper for carousel items -->
+								<div class="carousel-inner">
+									<div class="item active">
+										<img src="img/1.jpg" alt="First Slide" id="imgslide4">
+									</div>
+									<div class="item">
+										<img src="img/2.jpg" alt="Second Slide" id="imgslide5">
+									</div>
+									<div class="item">
+										<img src="img/3.jpg" alt="Third Slide" id="imgslide6">
+									</div>
+								</div>
+								<!-- Carousel controls -->
+								<a class="carousel-control left swiper-no-swiping" href="#slidergeopart" data-slide="prev">
+									<span class="glyphicon glyphicon-chevron-left"></span>
+								</a>
+								<a class="carousel-control right swiper-no-swiping" href="#slidergeopart" data-slide="next">
+									<span class="glyphicon glyphicon-chevron-right"></span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<h1> Partenaires </h1>
+					<div class="container">
+						<div class="row">
+							<div class="col-md-3 col-xs-12">
+								<span class="titrepart">Plans cadastraux</span>
+								<a href="http://cadastre.gouv.fr/scpc/accueil.do" target="_blank"><img class="partenaire" src="img/Site_cadastre.png" alt="cadastre" /> </a>
+								</br>
+							</div>
+
+							<div class="col-md-offset-1 col-md-3 col-xs-12">
+								<span class="titrepart">Géographie de réference: (cartes, photos aériennes etc)</span>
+								<a href="https://www.geoportail.gouv.fr/carte" target="_blank"><img class="partenaire" src="img/cartes.png" alt="carte" /></a>
+								</br>
+							</div>
+
+							<div class="col-md-offset-1 col-md-3 col-xs-12">
+								<span class="titrepart">Base de données géographique</span>
+								<a href="https://www.geoportail.gouv.fr/" target="_blank"><img class="partenaire" src="img/bddgeo.jpg" alt="base de donnée" /></a>
+								</br>
+							</div>
+
+						</div>
 
 
+						<div class="row">
+							<div class="col-md-offset-2 col-md-3 col-xs-12">
+								<span class="titrepart">Développement durable du gouvernement</span>
+								<a href="http://www.developpement-durable.gouv.fr/" target="_blank"><img class="partenaire" src="img/devdurable.jpg" alt="developpement durable" /></a>
+								</br>
+							</div>
+
+							<div class="col-md-offset-1 col-md-3 col-xs-12">
+								<span class="titrepart">Tout sur la profession</span>
+								<a href="http://www.geometre-expert.fr/" target="_blank"><img class="partenaire" src="img/geoexpert.jpg" alt="geometre geometre expert" /></a>
+								</br>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--Fin du contenu de partenaires-->
+				<!--Debut du contenu de contact-->
+				<div id="contact" class="post swiper-slide container cadre">
+					<div class="row">
+						<div class="slider">
+							<div id="slidergeocontact" class="carousel slide" data-ride="carousel">
+								<!-- Carousel indicators -->
+								<ol class="carousel-indicators swiper-no-swiping">
+									<li data-target="#slidergeocontact" data-slide-to="0" class="active"></li>
+									<li data-target="#slidergeocontact" data-slide-to="1"></li>
+									<li data-target="#slidergeocontact" data-slide-to="2"></li>
+								</ol>
+								<!-- Wrapper for carousel items -->
+								<div class="carousel-inner">
+									<div class="item active">
+										<img src="img/1.jpg" alt="First Slide" id="imgslide7">
+									</div>
+									<div class="item">
+										<img src="img/2.jpg" alt="Second Slide" id="imgslide8">
+									</div>
+									<div class="item">
+										<img src="img/3.jpg" alt="Third Slide" id="imgslide9">
+									</div>
+								</div>
+								<!-- Carousel controls -->
+								<a class="carousel-control left swiper-no-swiping" href="#slidergeocontact" data-slide="prev">
+									<span class="glyphicon glyphicon-chevron-left"></span>
+								</a>
+								<a class="carousel-control right swiper-no-swiping" href="#slidergeocontact" data-slide="next">
+									<span class="glyphicon glyphicon-chevron-right"></span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="test row">
+						<h1>BIBETTE Cécile DPLG</h1>
+						<div id="contactcontent" class="col-lg-4 col-lg-offset-1 col-md-12 col-sm-12 col-xs-12 swiper-no-swiping">
+							<div id="cecilecontact">
+
+								<span class="post-title"><div class="glyphicon glyphicon-user"></div> Géomètre-expert</span>
+								<div class=""></div>
+								<div class="glyphicon glyphicon-home"></div><br/> 29 place de l'église<br/> 40210 Pissos, Landes<br/> FRANCE
+								<br/><br/>
+								<div class="glyphicon glyphicon-phone-alt"></div> <br/>05 58 04 73 40<br/><br/>
+								<div class="glyphicon glyphicon-phone"></div> <br/>06 72 45 47 15 <br/><br/>
+								<div class="glyphicon glyphicon-print"></div> <br/>05 58 07 38 85<br/><br/>
+								<div class="glyphicon glyphicon-envelope"></div> <br/>cecile.bibette@orange.fr<br/><br/>
+								<button id="formbtn"><div class="glyphicon glyphicon-pencil"></div> Nous contacter</button><br/><br/>
+											
+							</div>
+						</div>
+						<div id="gmap" class="col-lg-5 col-lg-offset-2 col-md-10 col-sm-10 col-xs-12 swiper-no-swiping">
+						</div>
+
+						<div class="modal swiper-no-swiping" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																							<span aria-hidden="true">&times;</span>
+																						</button>
+									</div>
+									<div class="modal-body">
+
+										<form>
+											<div class="form-group">
+												<label for="InputEmail1">Votre adresse mail : </label>
+												<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Adresse Mail">
+											</div>
+											<div class="form-group">
+												<label for="InputNumero">Votre numéro de téléphone : </label>
+												<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Téléphone">
+											</div>
+											<div class="form-group">
+												<label for="exampleTextarea">Votre message : </label>
+												<textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+											</div>
+											<div class="form-group">
+												<label for="exampleInputFile">Pièces jointes : </label>
+												<input type="file" class="form-control-file" id="exampleInputFile">
+											</div>
+										</form>
+
+
+									</div>
+									<div class="modal-footer">
+										<button type="submit" class="btn btn-primary">Envoyer</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--Fin du contenu de contact-->
+		</div>
+		</div>
+		<!--Fin du contenu du site-->
+		<div id="footer">
+			<div id="rightfooter">
+				Copyright A.R.A &copy; 
+			</div>
 		</div>
 	</body>
+	<footer>
+		<!-- Swiper JS -->
+		<script src="http://cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
+		<script src="js/swiper.min.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAis2sSWo-UF_RPgosHey9qadmIcrqXj8&region=FR"></script>
+		<script src="js/gmaps.js"></script>
+		<script src="js/affichage.js"></script>
+		<!-- Initialize Swiper -->
+</head>
+<!--Script D'affichage Jquerry-->
+</footer>
+
 </html>
