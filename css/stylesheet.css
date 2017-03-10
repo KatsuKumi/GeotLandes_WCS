@@ -590,3 +590,6 @@ header h1 {
     transform: translateX(0);
   }
 }
+.first{
+    width: 100%;
+}

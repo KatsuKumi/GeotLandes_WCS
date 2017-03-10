@@ -39,6 +39,10 @@
 }
 #cecilecontact{
 	overflow: hidden;
+    background: white;
+    border-radius: 1em;
+    padding: 1em;
+    box-shadow: 0 3px 0 #d7e4ed;
 }
 #part [class*="col-"] {
   text-align: center;
@@ -259,9 +263,6 @@ h4{
 	}/*#5d3f05*/
 	li a:hover{
 		color:#8a6d3b;
-	}
-	.cadre{
-		margin: 20px;
 	}
 	.item{
 		height: 50%;
