@@ -592,4 +592,5 @@ header h1 {
 }
 .first{
     width: 100%;
+    text-align: justify;
 }
