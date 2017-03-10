@@ -173,5 +173,22 @@ $(document).ready(function () {
 			}, 1000);
 		$('#myModal').appendTo("body").modal('show');
 	}
-
+	randomizeimageslider()
 });
+function contain(a, obj) {
+	for (var i = 0; i < a.length; i++) {
+		if (a[i] === obj) {
+			return true;
+		}
+	}
+	return false;
+}
+function randomizeimageslider() {
+	var arr = []
+	while (arr.length <= 9) {
+		var randomnumber = Math.ceil(Math.random() * 15)
+		if (arr.indexOf(randomnumber) > -1) continue;
+		arr[arr.length] = randomnumber;
+		document.getElementById('imgslide' + arr.length).src="img/"+randomnumber +".JPG";
+	}
+}
