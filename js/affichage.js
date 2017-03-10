@@ -96,25 +96,21 @@ $('.navbar a').click(function () {
 		$('html, body').animate({
 			scrollTop: $("#oeuvre").offset().top
 		}, 500);
-		$('#texte3').collapse();
 	}
 	else if (id == "amenagment") {
 		$('html, body').animate({
 			scrollTop: $("#amenagement").offset().top
 		}, 500);
-		$('#texte4').collapse();
 	}
 	else if (id == "travauxspecbtn") {
 		$('html, body').animate({
-			scrollTop: $("#amenagement").offset().top
+			scrollTop: $("#travauxspec").offset().top
 		}, 500);
-		$('#texte5').collapse();
 	}
 	else if (id == "foncierbtn") {
 		$('html, body').animate({
 			scrollTop: $("#foncier").offset().top
 		}, 500);
-		$('#texte6').collapse();
 	}
 	else {
 		$('html,body').animate({ scrollTop: 0 }, 100);
